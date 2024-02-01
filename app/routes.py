@@ -16,6 +16,23 @@ def get_users():
     return jsonify({'users': user_list})
 
 
+@app.route('/add_user', methods=['POST'])
+def add_user():
+    data = request.json  # Assuming you are sending JSON data in the request body
+
+    name = data.get('name')
+    email = data.get('email')
+    mobile_number = data.get('mobileNumber')
+
+    if not all([name, email, mobile_number]):
+        return jsonify({'error': 'Missing required fields'}), 400
+
+    new_user = User(name=name, email=email, mobileNumber=mobile_number)
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({'message': 'User added successfully'}), 201
+
 
 
 @app.route('/expenses', methods=['GET'])
@@ -42,19 +59,3 @@ def add_expense():
 
 
 
-@app.route('/add_user', methods=['POST'])
-def add_user():
-    data = request.json  # Assuming you are sending JSON data in the request body
-
-    name = data.get('name')
-    email = data.get('email')
-    mobile_number = data.get('mobileNumber')
-
-    if not all([name, email, mobile_number]):
-        return jsonify({'error': 'Missing required fields'}), 400
-
-    new_user = User(name=name, email=email, mobileNumber=mobile_number)
-    db.session.add(new_user)
-    db.session.commit()
-
-    return jsonify({'message': 'User added successfully'}), 201
