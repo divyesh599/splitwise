@@ -2,8 +2,8 @@
 from flask import jsonify, request
 from app import app, db, mail, scheduler
 from app.models import User, Expense, ExpensePaidBy, ExpenseOwedBy
-from app.services import split_expense, send_weekly_balances
-import time
+from app.services import add_expense_paid_by, split_equally, split_expense, send_weekly_balances, delete_expense_owed_by, delete_expense, delete_expense_paid_by, is_expense_correct
+
 
 
 # API Routes
@@ -59,23 +59,62 @@ def get_expenses():
 @app.route("/add_expense", methods=["POST"])
 def add_expense():
     data = request.json
-    print(data)
+    user_ids = {user.userId for user in User.query.all()}
 
-    if data["sharing_type"] == "EQUAL":
-        ExID = int(time.time())
+    if not is_expense_correct(data):
+        return jsonify({"error": "Amount mismatching"})
+
+    if data["expense_type"] == "EQUAL":
         UID = 1
         expense = Expense(
-            expenseId=ExID,
             desc=data["desc"],
             amount=data["amount"],
             createdById=UID,
         )
+        db.session.add(expense)
+        db.session.commit()
+        
+        add_expense_paid_by(expense.expenseId, data['paidBy'])
+        split_equally(expense.expenseId, user_ids, data['amount'])
 
-    # new_expense = Expense(type=data['type'], amount=data['amount'], simplifyFlag=data['simplifyFlag'])
-    # db.session.add(new_expense)
-    # db.session.commit()
-    # participants = data.get('participants', [])
-    # split_expense(new_expense, participants)
+
     # # Schedule weekly email notifications
     # scheduler.add_job(send_weekly_balances, 'interval', weeks=1)
     return jsonify({"message": "Expense added successfully"})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route("/delete", methods=["POST"])
+def delete():
+    temp = request.json['ID']
+    delete_expense(temp)
+    delete_expense_owed_by(temp)
+    delete_expense_paid_by(temp)
+    return jsonify({"message": "Deleted.."})
+
+@app.route("/delete_user", methods=["POST"])
+def delete_user():
+    temp = request.json['ID']
+    db.session.query(User).filter(User.userId == temp).delete()
+    db.session.commit()
+    return jsonify({"message": "Deleted.."})

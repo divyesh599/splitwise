@@ -5,6 +5,85 @@ from flask_mail import Message
 from threading import Thread
 
 
+
+def add_expense_paid_by(expense_id, paidBy):
+    expense_paid_by_list = []
+
+    for user_id, amount in paidBy.items():
+        expense_paid_by_list.append(ExpensePaidBy(
+            userId=int(user_id),
+            expenseId=expense_id,
+            amount=amount,
+        ))
+
+    db.session.add_all(expense_paid_by_list)
+    db.session.commit()
+
+
+def split_equally(expense_id, user_ids, amount):
+    temp_amount = round(amount / len(user_ids), 2)
+
+    expense_owed_by_list = []
+    for user_id in user_ids:
+        expense_owed_by_list.append(ExpenseOwedBy(
+            userId=user_id,
+            expenseId=expense_id,
+            amount=temp_amount,
+        ))
+        amount -= temp_amount
+
+    if amount != 0:
+        expense_owed_by_list[0].amount += amount
+
+    db.session.add_all(expense_owed_by_list)
+    db.session.commit()
+
+
+
+
+def delete_expense_owed_by(expense_id):
+    # Filter records based on expense_id and delete them
+    db.session.query(ExpenseOwedBy).filter(ExpenseOwedBy.expenseId == expense_id).delete()
+    db.session.commit()
+
+def delete_expense(expense_id):
+    # Filter records based on expense_id and delete them
+    db.session.query(Expense).filter(Expense.expenseId == expense_id).delete()
+    db.session.commit()
+
+def delete_expense_paid_by(expense_id):
+    # Filter records based on expense_id and delete them
+    db.session.query(ExpensePaidBy).filter(ExpensePaidBy.expenseId == expense_id).delete()
+    db.session.commit()
+
+
+def is_expense_correct(data):
+    total_paid_amount = sum(data['paidBy'].values())
+    if data['amount'] != total_paid_amount:
+        return False
+    
+    return True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Function to split the expense among participants
 def split_expense(expense, participants):
     total_amount = float(expense.amount)
