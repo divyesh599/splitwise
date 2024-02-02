@@ -21,7 +21,6 @@ splitwise/
 ```
 
 
-
 ## Project Structure
 
 - The `app/` directory is the core of the application, organized into the following components:
@@ -80,14 +79,26 @@ To run the application:
 
 ## Class Diagram
 
-### User
+```bash
++------------------+       +------------------+       +---------------------+       +---------------------+
+|       User       |       |     Expense      |       |   ExpensePaidBy     |       |   ExpenseOwedBy     |
++------------------+       +------------------+       +---------------------+       +---------------------+
+| - userId         |       | - expenseId      |       | - userId            |       | - userId            |
+| - name           |       | - desc           |       | - expenseId         |       | - expenseId         |
+| - email          |       | - amount         |       | - amountPaid        |       | - amountOwed        |
+| - mobileNumber   |       | - createdById    |       +---------------------+       +---------------------+
++------------------+       | - createdAt      |       
+                           +------------------+
+```
+
+### User Class
 
 - **userId**
 - name
 - email
 - mobileNumber
 
-### Expense
+### Expense Class
 
 - **expenseId**
 - desc
@@ -95,13 +106,13 @@ To run the application:
 - createdById
 - createdAt
 
-### ExpensePaidBy
+### ExpensePaidBy Class
 
 - **userId**
 - **expenseId**
 - amount
 
-### ExpenseOwedBy
+### ExpenseOwedBy Class
 
 - **userId**
 - **expenseId**
