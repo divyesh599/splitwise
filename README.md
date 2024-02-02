@@ -151,7 +151,7 @@ To run the application:
 - **expenseId**: Unique identifier for each expense.
 - **desc**: Description of the expense.
 - **amount**: Total amount of the expense.
-- **createdById**: User ID of the creator of the expense.
+- **createdById**: User ID of the creator of the expense. Default: userId = 1
 - **createdAt**: Timestamp indicating when the expense was created.
 
 ### ExpensePaidBy
