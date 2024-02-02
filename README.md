@@ -95,19 +95,14 @@ The spiltwise is a simple application designed to help users track their expense
 - The `User` entity is associated with the `UserExpensePaid` and `UserExpenseOwed` entities.
 - The `Expense` entity is associated with the `UserExpensePaid` and `UserExpenseOwed` entities.
 
-## Usage
 
-1. **User Management**: Create, update, and delete user profiles.
-2. **Expense Tracking**: Record and manage expenses with details like type, amount, and participants.
-3. **Payment Tracking**: Track payments made by users for specific expenses.
-4. **Owed Amounts**: Monitor amounts owed by users for shared expenses.
 
 ## Installation
 
 To use the Expense Tracker System, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your/repo.git`
-2. Install dependencies: `npm install`
+2. Install dependencies: `pip install`
 3. Configure the database connection in `config.js`.
 4. Run the application: `npm start`
 
