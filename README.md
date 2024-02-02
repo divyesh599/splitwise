@@ -174,21 +174,132 @@ To run the application:
 
 # Splitwise API Documentation
 
-## 1. Get Users
+### 1. Get Users
 
-**Endpoint:** `/users`  
-**Method:** GET  
-**Description:** Retrieves a list of all users.  
-**Response Format:**
-```json
-{
-  "users": [
+- **Endpoint:** `/users`  
+- **Method:** GET  
+- **Description:** Retrieves a list of all users.  
+- **Response Format:**
+    ```json
     {
-      "userId": 1,
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "mobileNumber": "123-456-7890"
+    "users": [
+        {
+        "userId": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "mobileNumber": "123-456-7890"
+        },
+        // Additional user objects...
+    ]
+    }
+    ```
+
+### 2. Add User
+
+- **Endpoint:** `/add_user`  
+- **Method:** POST  
+- **Description:** Adds a new user to the system.  
+- **Request Format:**
+    ```json
+    {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "mobileNumber": "123-456-7890"
+    }
+    ```
+- **Response Format:**
+    ```json
+    {
+    "message": "User added successfully"
+    }
+    ```
+
+### 3. Add Expense
+
+**Equal Split**
+- **Endpoint:** `/add_expense`
+- **Method:** POST
+- **Description:** Adds a new expense along with expense-related details.
+- **Request Format:**
+    ```json
+    {
+    "expense_type": "EQUAL",
+    "desc": "electricity bill",
+    "total_amount": 500,
+    "paidBy": {
+        "2": 200,
+        "3": 300
+    }
+    }
+    ```
+- **Response Format:**
+    ```json
+    {
+    "message": "Expense added successfully"  // or details of any errors
+    }
+    ```
+
+**Exact Split**
+- **Endpoint:** `/add_expense`
+- **Method:** POST
+- **Description:** Adds a new expense along with expense-related details.
+- **Request Format:**
+    ```json
+    {
+    "expense_type": "EXACT",
+    "desc": "paytm",
+    "total_amount": 600,
+    "paidBy": {
+        "1": 300,
+        "3": 300
     },
-    // Additional user objects...
-  ]
-}
+    "owedBy": {
+        "1": 100,
+        "3": 200,
+        "4": 300
+    }
+    }
+    ```
+- **Response Format:**
+    ```json
+    {
+    "message": "Expense added successfully"  // or details of any errors
+    }
+    ```
+
+**Percent Split**
+- **Endpoint:** `/add_expense`
+- **Method:** POST
+- **Description:** Adds a new expense along with expense-related details.
+- **Request Format:**
+    ```json
+    {
+    "expense_type": "PERCENT",
+    "desc": "paytm",
+    "total_amount": 700,
+    "paidBy": {
+        "1": 700
+    },
+    "owedBy": {
+        "1": 20,
+        "2": 33,
+        "3": 47
+    }
+    }
+    ```
+
+- **Response Format:**
+    ```json
+    {
+    "message": "Expense added successfully"  // or details of any errors
+    }
+    ```
+
+
+
+
+
+
+
+
+
