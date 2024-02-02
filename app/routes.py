@@ -52,7 +52,7 @@ def add_expense():
     user_ids = {user.userId for user in User.query.all()}
 
     if not is_expense_correct(data):
-        return jsonify({"error": "Amount mismatching"})
+        return jsonify({"error": "Given data mismatching."})
 
     # Assuming pre-validation, we proceed with the expectation of correct data.
 
