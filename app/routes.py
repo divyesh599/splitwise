@@ -8,8 +8,6 @@ from app.services import (
     split_equally,
     split_exactly,
     split_percently,
-    send_email_notifications,
-    # send_weekly_balances,
     is_expense_correct,
 )
 
@@ -55,7 +53,7 @@ def add_expense():
 
     if not is_expense_correct(data):
         return jsonify({"error": "Amount mismatching"})
-    
+
     # Assuming pre-validation, we proceed with the expectation of correct data.
 
     # Add Expense
@@ -74,11 +72,14 @@ def add_expense():
     # Add Expense Owed By
     message = {}
     if data["expense_type"] == "EQUAL":
-        message = split_equally(expense.expenseId, user_ids, data["total_amount"])
-    elif data["expense_type"] == 'EXACT':
-        message = split_exactly(expense.expenseId, data['owedBy'])
-    elif data["expense_type"] == 'PERCENT':
-        message = split_percently(expense.expenseId, data['owedBy'], data["total_amount"])
+        message = split_equally(
+            expense.expenseId, user_ids, data["total_amount"])
+    elif data["expense_type"] == "EXACT":
+        message = split_exactly(expense.expenseId, data["owedBy"])
+    elif data["expense_type"] == "PERCENT":
+        message = split_percently(
+            expense.expenseId, data["owedBy"], data["total_amount"]
+        )
 
     # # Schedule weekly email notifications
     # scheduler.add_job(send_weekly_balances, 'interval', weeks=1)
@@ -88,35 +89,27 @@ def add_expense():
 @app.route("/delete_expense", methods=["POST"])
 def delete_expense():
     IDs = request.json["ID"]
-    db.session.query(Expense).filter(Expense.expenseId.in_(IDs)).delete(synchronize_session=False)
-    db.session.query(ExpenseOwedBy).filter(ExpenseOwedBy.expenseId.in_(IDs)).delete(synchronize_session=False)
-    db.session.query(ExpensePaidBy).filter(ExpensePaidBy.expenseId.in_(IDs)).delete(synchronize_session=False)    
-    db.session.commit()    
-    return jsonify({"message": "Deleted.."})
-
-@app.route("/delete_user", methods=["POST"])
-def delete_user():
-    IDs = request.json["ID"]
-    db.session.query(User).filter(User.userId.in_(IDs)).delete(synchronize_session=False)
+    db.session.query(Expense).filter(Expense.expenseId.in_(IDs)).delete(
+        synchronize_session=False
+    )
+    db.session.query(ExpenseOwedBy).filter(ExpenseOwedBy.expenseId.in_(IDs)).delete(
+        synchronize_session=False
+    )
+    db.session.query(ExpensePaidBy).filter(ExpensePaidBy.expenseId.in_(IDs)).delete(
+        synchronize_session=False
+    )
     db.session.commit()
     return jsonify({"message": "Deleted.."})
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@app.route("/delete_user", methods=["POST"])
+def delete_user():
+    IDs = request.json["ID"]
+    db.session.query(User).filter(User.userId.in_(IDs)).delete(
+        synchronize_session=False
+    )
+    db.session.commit()
+    return jsonify({"message": "Deleted.."})
 
 
 # @app.route("/expenses", methods=["GET"])
@@ -133,4 +126,3 @@ def delete_user():
 #         for expense in expenses
 #     ]
 #     return jsonify({"expenses": expense_list})
-

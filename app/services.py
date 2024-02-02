@@ -5,22 +5,20 @@ from flask_mail import Message
 from threading import Thread
 
 
-
 def add_expense_paid_by(expense_id, paidBy):
     expense_paid_by_list = []
 
     for user_id, amount in paidBy.items():
-        expense_paid_by_list.append(ExpensePaidBy(
-            userId=int(user_id),
-            expenseId=expense_id,
-            amount=amount,
-        ))
+        expense_paid_by_list.append(
+            ExpensePaidBy(
+                userId=int(user_id),
+                expenseId=expense_id,
+                amount=amount,
+            )
+        )
 
     db.session.add_all(expense_paid_by_list)
     db.session.commit()
-
-
-
 
 
 def split_equally(expense_id, user_ids, total_amount):
@@ -29,11 +27,13 @@ def split_equally(expense_id, user_ids, total_amount):
     AMOUNT = total_amount
     expense_owed_by_list = []
     for user_id in user_ids:
-        expense_owed_by_list.append(ExpenseOwedBy(
-            userId=user_id,
-            expenseId=expense_id,
-            amount=temp_amount,
-        ))
+        expense_owed_by_list.append(
+            ExpenseOwedBy(
+                userId=user_id,
+                expenseId=expense_id,
+                amount=temp_amount,
+            )
+        )
         total_amount -= temp_amount
 
     if total_amount != 0:
@@ -44,28 +44,28 @@ def split_equally(expense_id, user_ids, total_amount):
 
     send_email_notifications(expense_id, AMOUNT, user_ids)
 
-    return {"message" : "Expense split equally added successfully"}
-
+    return {"message": "Expense split equally added successfully"}
 
 
 def split_exactly(expense_id, owedBy):
     expense_owed_by_list = []
 
     for user_id, amount in owedBy.items():
-        expense_owed_by_list.append(ExpenseOwedBy(
-            userId=user_id,
-            expenseId=expense_id,
-            amount=amount,
-        ))
+        expense_owed_by_list.append(
+            ExpenseOwedBy(
+                userId=user_id,
+                expenseId=expense_id,
+                amount=amount,
+            )
+        )
 
     db.session.add_all(expense_owed_by_list)
     db.session.commit()
 
-    send_email_notifications(expense_id, sum(owedBy.values()), set(owedBy.keys()))
+    send_email_notifications(expense_id, sum(
+        owedBy.values()), set(owedBy.keys()))
 
-    return {"message" : "Expense split exactly added successfully"}
-
-
+    return {"message": "Expense split exactly added successfully"}
 
 
 def split_percently(expense_id, owedBy, total_amount):
@@ -74,11 +74,13 @@ def split_percently(expense_id, owedBy, total_amount):
     AMOUNT = total_amount
     for user_id, percent in owedBy.items():
         amount = round((percent / 100) * AMOUNT, 2)
-        expense_owed_by_list.append(ExpenseOwedBy(
-            userId=user_id,
-            expenseId=expense_id,
-            amount=amount,
-        ))
+        expense_owed_by_list.append(
+            ExpenseOwedBy(
+                userId=user_id,
+                expenseId=expense_id,
+                amount=amount,
+            )
+        )
         total_amount -= amount
 
     if total_amount != 0:
@@ -89,31 +91,27 @@ def split_percently(expense_id, owedBy, total_amount):
 
     send_email_notifications(expense_id, AMOUNT, set(owedBy.keys()))
 
-    return {"message" : "Expense split by percentage added successfully"}
-
-
-
-
-
-
+    return {"message": "Expense split by percentage added successfully"}
 
 
 def is_expense_correct(data):
-    total_paid_amount = sum(data['paidBy'].values())
-    if data['total_amount'] != total_paid_amount:
+    total_paid_amount = sum(data["paidBy"].values())
+    if data["total_amount"] != total_paid_amount:
         return False
-    
+
     return True
-
-
 
 
 def send_email_notifications(expense_id, total_amount, user_ids):
     with app.app_context():
         for user_id in user_ids:
             user = User.query.get(int(user_id))
-            amount = db.session.query(ExpenseOwedBy.amount).filter_by(expenseId=expense_id, userId=user_id).first()[0]
-            
+            amount = (
+                db.session.query(ExpenseOwedBy.amount)
+                .filter_by(expenseId=expense_id, userId=user_id)
+                .first()[0]
+            )
+
             # amount_value = amount[0]
             msg = Message(
                 subject="New Expense Notification",
@@ -124,15 +122,6 @@ def send_email_notifications(expense_id, total_amount, user_ids):
                             Total amount: {float(total_amount):.2f} INR. \
                             You owe: {amount:.2f} INR for this expense."
             Thread(target=mail.send, args=(msg,)).start()
-
-
-
-
-
-
-
-
-
 
 
 # # Function to calculate user balance for a given expense

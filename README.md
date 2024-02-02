@@ -6,7 +6,7 @@ Splitwise project is an example Flask web application designed to manage expense
 
 ## Directory Structure
 
-```plaintext
+```lua
 splitwise/
 |-- app/
 |   |-- __init__.py
@@ -172,20 +172,23 @@ To run the application:
 - The `Expense` entity is associated with the `UserExpensePaid` and `UserExpenseOwed` entities.
 
 
+# Splitwise API Documentation
 
-## Installation
+## 1. Get Users
 
-To use the Expense Tracker System, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/your/repo.git`
-2. Install dependencies: `pip install`
-3. Configure the database connection in `config.js`.
-4. Run the application: `npm start`
-
-## Contributing
-
-If you would like to contribute to the project, please follow the [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This Expense Tracker System is licensed under the [MIT License](LICENSE).
+**Endpoint:** `/users`  
+**Method:** GET  
+**Description:** Retrieves a list of all users.  
+**Response Format:**
+```json
+{
+  "users": [
+    {
+      "userId": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "mobileNumber": "123-456-7890"
+    },
+    // Additional user objects...
+  ]
+}

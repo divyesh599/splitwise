@@ -16,14 +16,22 @@ class Expense(db.Model):
     amount = db.Column(db.DECIMAL(15, 2), nullable=False)
     createdById = db.Column(db.Integer, nullable=False)
     createdAt = db.Column(
-        db.TIMESTAMP, server_default=db.func.current_timestamp(), nullable=False
+        db.TIMESTAMP,
+        server_default=db.func.current_timestamp(),
+        nullable=False
     )
 
 
 class ExpensePaidBy(db.Model):
-    userId = db.Column(db.Integer, db.ForeignKey("user.userId"), primary_key=True)
+    userId = db.Column(
+        db.Integer,
+        db.ForeignKey("user.userId"),
+        primary_key=True
+    )
     expenseId = db.Column(
-        db.Integer, db.ForeignKey("expense.expenseId"), primary_key=True
+        db.Integer,
+        db.ForeignKey("expense.expenseId"),
+        primary_key=True
     )
     amount = db.Column(db.DECIMAL(15, 2), nullable=False)
 
@@ -33,9 +41,15 @@ class ExpensePaidBy(db.Model):
 
 
 class ExpenseOwedBy(db.Model):
-    userId = db.Column(db.Integer, db.ForeignKey("user.userId"), primary_key=True)
+    userId = db.Column(
+        db.Integer,
+        db.ForeignKey("user.userId"),
+        primary_key=True
+    )
     expenseId = db.Column(
-        db.Integer, db.ForeignKey("expense.expenseId"), primary_key=True
+        db.Integer,
+        db.ForeignKey("expense.expenseId"),
+        primary_key=True
     )
     amount = db.Column(db.DECIMAL(15, 2), nullable=False)
 
