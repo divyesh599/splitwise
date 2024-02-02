@@ -1,5 +1,6 @@
 # app/routes.py
 from flask import jsonify, request
+from sqlalchemy.orm import aliased
 from app import app, db, mail, scheduler
 from app.models import User, Expense, ExpensePaidBy, ExpenseOwedBy
 from app.services import (
@@ -7,8 +8,8 @@ from app.services import (
     split_equally,
     split_exactly,
     split_percently,
-    split_expense,
-    send_weekly_balances,
+    send_email_notifications,
+    # send_weekly_balances,
     is_expense_correct,
 )
 
@@ -79,7 +80,6 @@ def add_expense():
     elif data["expense_type"] == 'PERCENT':
         message = split_percently(expense.expenseId, data['owedBy'], data["total_amount"])
 
-
     # # Schedule weekly email notifications
     # scheduler.add_job(send_weekly_balances, 'interval', weeks=1)
     return jsonify(message)
@@ -119,18 +119,18 @@ def delete_user():
 
 
 
-@app.route("/expenses", methods=["GET"])
-def get_expenses():
-    expenses = Expense.query.all()
-    expense_list = [
-        {
-            "expenseId": expense.expenseId,
-            "type": expense.type,
-            "amount": float(expense.amount),
-            "simplifyFlag": expense.simplifyFlag,
-            "createdAt": expense.createdAt,
-        }
-        for expense in expenses
-    ]
-    return jsonify({"expenses": expense_list})
+# @app.route("/expenses", methods=["GET"])
+# def get_expenses():
+#     expenses = Expense.query.all()
+#     expense_list = [
+#         {
+#             "expenseId": expense.expenseId,
+#             "type": expense.type,
+#             "amount": float(expense.amount),
+#             "simplifyFlag": expense.simplifyFlag,
+#             "createdAt": expense.createdAt,
+#         }
+#         for expense in expenses
+#     ]
+#     return jsonify({"expenses": expense_list})
 
