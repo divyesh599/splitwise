@@ -235,7 +235,7 @@ To run the application:
 - **Response Format:**
     ```json
     {
-    "message": "Expense added successfully"  // or details of any errors
+    "message": "Expense split equally added successfully"  // or details of any errors
     }
     ```
 
@@ -263,7 +263,7 @@ To run the application:
 - **Response Format:**
     ```json
     {
-    "message": "Expense added successfully"  // or details of any errors
+    "message": "Expense split exactly added successfully"  // or details of any errors
     }
     ```
 
@@ -291,7 +291,7 @@ To run the application:
 - **Response Format:**
     ```json
     {
-    "message": "Expense added successfully"  // or details of any errors
+    "message": "Expense split by percentage added successfully"  // or details of any errors
     }
     ```
 
