@@ -1,8 +1,65 @@
-I'm hoping the assignment will be reviewed on February 2, 2024, as I'm still making adjustments. Please note that I've had a busy schedule with full office work over the last two days.
+# Splitwise - Expense Tracker System
 
-# Expense Tracker System
+The spiltwise is a simple application designed to help users track their expenses and manage shared expenses among a group of users.
 
-The Expense Tracker System is a simple application designed to help users track their expenses and manage shared expenses among a group of users.
+## Class Diagram
+
+### User
+
+- **userId**
+- name
+- email
+- mobileNumber
+
+### Expense
+
+- **expenseId**
+- desc
+- amount
+- createdById
+- createdAt
+
+### ExpensePaidBy
+
+- **userId**
+- **expenseId**
+- amount
+
+### ExpenseOwedBy
+
+- **userId**
+- **expenseId**
+- amount
+
+## Database Model
+
+### User
+
+- **userId**: Integer (Primary Key)
+- **name**: String (255), Not Null
+- **email**: String (255), Unique, Not Null
+- **mobileNumber**: String (20), Not Null
+
+### Expense
+
+- **expenseId**: Integer (Primary Key)
+- **desc**: String (255), Not Null
+- **amount**: Decimal (15, 2), Not Null
+- **createdById**: Integer, Not Null
+- **createdAt**: Timestamp, Default: Current Timestamp
+
+### ExpensePaidBy
+
+- **userId**: Integer (Foreign Key to User.userId, Primary Key)
+- **expenseId**: Integer (Foreign Key to Expense.expenseId, Primary Key)
+- **amount**: Decimal (15, 2), Not Null
+
+### ExpenseOwedBy
+
+- **userId**: Integer (Foreign Key to User.userId, Primary Key)
+- **expenseId**: Integer (Foreign Key to Expense.expenseId, Primary Key)
+- **amount**: Decimal (15, 2), Not Null
+
 
 ## Entity Descriptions
 
@@ -16,19 +73,18 @@ The Expense Tracker System is a simple application designed to help users track 
 ### Expense
 
 - **expenseId**: Unique identifier for each expense.
-- **type**: Type or category of the expense.
+- **desc**: Description of the expense.
 - **amount**: Total amount of the expense.
-- **participants**: List of users involved in the expense.
-- **simplifyFlag**: Flag indicating whether the expense needs to be simplified.
+- **createdById**: User ID of the creator of the expense.
 - **createdAt**: Timestamp indicating when the expense was created.
 
-### UserExpensePaid
+### ExpensePaidBy
 
 - **user**: User who paid for the expense.
 - **expense**: Expense for which the user made a payment.
 - **amountPaid**: Amount paid by the user for the expense.
 
-### UserExpenseOwed
+### ExpenseOwedBy
 
 - **user**: User who owes money for the expense.
 - **expense**: Expense for which the user owes money.
