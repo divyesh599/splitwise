@@ -5,11 +5,10 @@ from app.models import User, Expense, ExpensePaidBy, ExpenseOwedBy
 from app.services import (
     add_expense_paid_by,
     split_equally,
+    split_exactly,
+    split_percently,
     split_expense,
     send_weekly_balances,
-    delete_expense_owed_by,
-    delete_expense,
-    delete_expense_paid_by,
     is_expense_correct,
 )
 
@@ -48,6 +47,78 @@ def add_user():
     return jsonify({"message": "User added successfully"}), 201
 
 
+@app.route("/add_expense", methods=["POST"])
+def add_expense():
+    data = request.json
+    user_ids = {user.userId for user in User.query.all()}
+
+    if not is_expense_correct(data):
+        return jsonify({"error": "Amount mismatching"})
+    
+    # Assuming pre-validation, we proceed with the expectation of correct data.
+
+    # Add Expense
+    UID = 1  # Default creator ID for expenses
+    expense = Expense(
+        desc=data["desc"],
+        amount=data["total_amount"],
+        createdById=UID,
+    )
+    db.session.add(expense)
+    db.session.commit()
+
+    # Add Expense Paid By
+    add_expense_paid_by(expense.expenseId, data["paidBy"])
+
+    # Add Expense Owed By
+    message = {}
+    if data["expense_type"] == "EQUAL":
+        message = split_equally(expense.expenseId, user_ids, data["total_amount"])
+    elif data["expense_type"] == 'EXACT':
+        message = split_exactly(expense.expenseId, data['owedBy'])
+    elif data["expense_type"] == 'PERCENT':
+        message = split_percently(expense.expenseId, data['owedBy'], data["total_amount"])
+
+
+    # # Schedule weekly email notifications
+    # scheduler.add_job(send_weekly_balances, 'interval', weeks=1)
+    return jsonify(message)
+
+
+@app.route("/delete_expense", methods=["POST"])
+def delete_expense():
+    IDs = request.json["ID"]
+    db.session.query(Expense).filter(Expense.expenseId.in_(IDs)).delete(synchronize_session=False)
+    db.session.query(ExpenseOwedBy).filter(ExpenseOwedBy.expenseId.in_(IDs)).delete(synchronize_session=False)
+    db.session.query(ExpensePaidBy).filter(ExpensePaidBy.expenseId.in_(IDs)).delete(synchronize_session=False)    
+    db.session.commit()    
+    return jsonify({"message": "Deleted.."})
+
+@app.route("/delete_user", methods=["POST"])
+def delete_user():
+    IDs = request.json["ID"]
+    db.session.query(User).filter(User.userId.in_(IDs)).delete(synchronize_session=False)
+    db.session.commit()
+    return jsonify({"message": "Deleted.."})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @app.route("/expenses", methods=["GET"])
 def get_expenses():
     expenses = Expense.query.all()
@@ -63,45 +134,3 @@ def get_expenses():
     ]
     return jsonify({"expenses": expense_list})
 
-
-@app.route("/add_expense", methods=["POST"])
-def add_expense():
-    data = request.json
-    user_ids = {user.userId for user in User.query.all()}
-
-    if not is_expense_correct(data):
-        return jsonify({"error": "Amount mismatching"})
-
-    if data["expense_type"] == "EQUAL":
-        UID = 1
-        expense = Expense(
-            desc=data["desc"],
-            amount=data["amount"],
-            createdById=UID,
-        )
-        db.session.add(expense)
-        db.session.commit()
-
-        add_expense_paid_by(expense.expenseId, data["paidBy"])
-        split_equally(expense.expenseId, user_ids, data["amount"])
-
-    # # Schedule weekly email notifications
-    # scheduler.add_job(send_weekly_balances, 'interval', weeks=1)
-    return jsonify({"message": "Expense added successfully"})
-
-
-@app.route("/delete", methods=["POST"])
-def delete():
-    temp = request.json["ID"]
-    delete_expense(temp)
-    delete_expense_owed_by(temp)
-    delete_expense_paid_by(temp)
-    return jsonify({"message": "Deleted.."})
-
-
-@app.route("/delete_user", methods=["POST"])
-def delete_user():
-    temp = request.json["ID"]
-    db.session.query(User).filter(User.userId == temp).delete()
-    db.session.commit()
-    return jsonify({"message": "Deleted.."})

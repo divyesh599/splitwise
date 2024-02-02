@@ -20,8 +20,8 @@ def add_expense_paid_by(expense_id, paidBy):
     db.session.commit()
 
 
-def split_equally(expense_id, user_ids, amount):
-    temp_amount = round(amount / len(user_ids), 2)
+def split_equally(expense_id, user_ids, total_amount):
+    temp_amount = round(total_amount / len(user_ids), 2)
 
     expense_owed_by_list = []
     for user_id in user_ids:
@@ -30,40 +30,70 @@ def split_equally(expense_id, user_ids, amount):
             expenseId=expense_id,
             amount=temp_amount,
         ))
-        amount -= temp_amount
+        total_amount -= temp_amount
 
-    if amount != 0:
-        expense_owed_by_list[0].amount += amount
+    if total_amount != 0:
+        expense_owed_by_list[0].amount += total_amount
 
     db.session.add_all(expense_owed_by_list)
     db.session.commit()
 
+    return {"message" : "Expense split equally added successfully"}
 
 
 
-def delete_expense_owed_by(expense_id):
-    # Filter records based on expense_id and delete them
-    db.session.query(ExpenseOwedBy).filter(ExpenseOwedBy.expenseId == expense_id).delete()
+def split_exactly(expense_id, owedBy):
+    expense_owed_by_list = []
+
+    for user_id, amount in owedBy.items():
+        expense_owed_by_list.append(ExpenseOwedBy(
+            userId=user_id,
+            expenseId=expense_id,
+            amount=amount,
+        ))
+
+    db.session.add_all(expense_owed_by_list)
     db.session.commit()
 
-def delete_expense(expense_id):
-    # Filter records based on expense_id and delete them
-    db.session.query(Expense).filter(Expense.expenseId == expense_id).delete()
+    return {"message" : "Expense split exactly added successfully"}
+
+
+
+
+def split_percently(expense_id, owedBy, total_amount):
+    expense_owed_by_list = []
+
+    AMOUNT = total_amount
+    for user_id, percent in owedBy.items():
+        amount = round((percent / 100) * AMOUNT, 2)
+        expense_owed_by_list.append(ExpenseOwedBy(
+            userId=user_id,
+            expenseId=expense_id,
+            amount=amount,
+        ))
+        total_amount -= amount
+
+    if total_amount != 0:
+        expense_owed_by_list[0].amount += total_amount
+
+    db.session.add_all(expense_owed_by_list)
     db.session.commit()
 
-def delete_expense_paid_by(expense_id):
-    # Filter records based on expense_id and delete them
-    db.session.query(ExpensePaidBy).filter(ExpensePaidBy.expenseId == expense_id).delete()
-    db.session.commit()
+    return {"message" : "Expense split by percentage added successfully"}
+
+
+
+
+
+
 
 
 def is_expense_correct(data):
     total_paid_amount = sum(data['paidBy'].values())
-    if data['amount'] != total_paid_amount:
+    if data['total_amount'] != total_paid_amount:
         return False
     
     return True
-
 
 
 
