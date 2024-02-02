@@ -1,6 +1,82 @@
 # Splitwise - Expense Tracker System
 
-The spiltwise is a simple application designed to help users track their expenses and manage shared expenses among a group of users.
+## Overview
+
+Splitwise project is an example Flask web application designed to manage expenses among users. This README provides an overview of the project structure and how to run the application.
+
+## Directory Structure
+
+```plaintext
+splitwise/
+|-- app/
+|   |-- __init__.py
+|   |-- models.py
+|   |-- routes.py
+|   |-- services.py
+|   |-- templates/
+|   |-- static/
+|-- config.py
+|-- splitwise.db
+|-- run.py
+```
+
+
+
+## Project Structure
+
+- The `app/` directory is the core of the application, organized into the following components:
+
+    - **`__init__.py`**: Initializes the Flask application.
+
+    - **`models.py`**: Defines the database models.
+
+    - **`routes.py`**: Manages route definitions and request handling logic.
+
+    - **`services.py`**: Contains additional business logic or services.
+
+    - **`templates/`**: This directory is a placeholder for HTML templates.
+
+    - **`static/`**: Holds static files such as stylesheets and JavaScript.
+
+- The `config.py` file serves as the configuration hub for the application.
+
+- The `splitwise.db` file is an SQLite database used to store application data.
+
+- The `run.py` script is designed to execute the Flask application.
+
+## Getting Started
+
+To run the application:
+
+1. Install dependencies:
+
+    ```bash
+    pip install Flask Flask-SQLAlchemy Flask-Mail APScheduler Flask-Migrate
+    ```
+
+2. Navigate `splitwise/` directory.
+
+    **Note:** Always remember to set up a virtual environment before installing dependencies to keep your project isolated.
+    
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. Run the application:
+
+    ```bash
+    python run.py
+    ```
+
+4. Access the application at [http://localhost:5000/](http://localhost:5000/).
+
+
+
+
+
+
+
 
 ## Class Diagram
 
