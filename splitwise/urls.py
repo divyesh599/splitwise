@@ -14,11 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from divvy import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homePage),
-    path('all-user', views.allUser),
+    path('users/', views.UserListCreateAPIView.as_view(), name='user-list-create'),
+    path('expenses/', views.ExpenseListCreateAPIView.as_view(), name='expense-list-create'),
+    path('add_expense/', views.add_expense),
+    # path('expenses/paidby/', views.ExpensePaidByListCreateAPIView.as_view(), name='expense-paidby-list-create'),
+    # path('expenses/owedby/', views.ExpenseOwedByListCreateAPIView.as_view(), name='expense-owedby-list-create'),
+    # path('users/<int:pk>/balance/', views.UserBalanceAPIView.as_view(), name='user-balance'),
 ]
