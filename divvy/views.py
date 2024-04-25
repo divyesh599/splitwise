@@ -31,20 +31,49 @@ class ExpenseListCreateAPIView(generics.ListCreateAPIView):
 @api_view(['POST'])
 def add_expense(request):
     # Extract data from the request
-    paid_by_user_id = request.data.get('paid_by_user_id')
-    amount_paid = request.data.get('amount_paid')
-    users_id_involved = request.data.get('users_id_involved')
-    expense_type = request.data.get('expense_type')
+    expense_type = request.data.get('expense_type') ## str value out of this : ["EQUAL", "EXACT", "PERCENT"]
+    desc = request.data.get('desc') ## str value
+    amount_paid = request.data.get('total_amount')   ## integer value
+    paid_by_user_id = request.data.get('paid_by')  ## dictionary format : { <user_id> : <amount_paid, in exact figure or in persentage>, ...}
+    owed_by_user_id = request.data.get('owed_by')  ## dictionary format : { <user_id> : <amount_owed>, ...}
+
+
+    try:
+        if expense_type not in ["EQUAL", "EXACT", "PERCENT"]:
+            raise ValueError("Expense type must be one out of these EQUAL, EXACT, PERCENT.")
+        if not isinstance(desc, str):
+            raise ValueError("desc must be a str.")
+        if not isinstance(amount_paid, int):
+            raise ValueError("amount paid must be a int value.")
+        if not isinstance(paid_by_user_id, dict):
+            raise ValueError("Paid by user id must be a dictionary format. { <user_id> : <amount_paid, in exact figure or in persentage>, ...}")
+        if not isinstance(owed_by_user_id, dict):
+            raise ValueError("Owed by user id must be a dictionary format. { <user_id> : <amount_owed>, ...}")
+        paid_by = {}
+        for key, val in paid_by_user_id:
+            paid_by[int(key)]=round(val, 2)
+        if sum(paid_by.values()) != round(amount_paid, 2):
+            raise ValueError("**")
+        
+        # owed_by = {}
+        # for key, val in owed_by_user_id:
+        #     owed_by[int(key)]=round(val, 2)
+        # if sum(paid_by.values()) != round(amount_paid, 2):
+        #     raise ValueError("**")
+        
+        
+    except Exception as e:
+        return Response({'error': f'Invalid input data for request parameters. {e}'}, status=status.HTTP_400_BAD_REQUEST)
 
     # Construct JSON response
-    response_data = {
-        'message': 'Expense added successfully',
-        'paid_by_user_id': paid_by_user_id,
-        'amount_paid': amount_paid,
-        'users_involved': users_id_involved,
-        'expense_type': expense_type
-    }
+    # response_data = {
+    #     'message': 'Expense added successfully',
+    #     'paid_by_user_id': paid_by_user_id,
+    #     'amount_paid': amount_paid,
+    #     'expense_type': expense_type,
+    #     'users_involved': users_id_involved,
+    # }
 
     # Return JSON response
-    return Response(response_data, status=status.HTTP_201_CREATED)
-
+    return Response(request.data, status=status.HTTP_201_CREATED)
+ 

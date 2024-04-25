@@ -29,4 +29,3 @@ class ExpenseOwedBy(models.Model):
 
     class Meta:
         unique_together = (('userId', 'expenseId'),)
-
