@@ -33,14 +33,16 @@ def add_expense(request):
     # Extract data from the request
     paid_by_user_id = request.data.get('paid_by_user_id')
     amount_paid = request.data.get('amount_paid')
-    users_involved = request.data.get('users_involved')
+    users_id_involved = request.data.get('users_id_involved')
+    expense_type = request.data.get('expense_type')
 
+    # Construct JSON response
     response_data = {
         'message': 'Expense added successfully',
         'paid_by_user_id': paid_by_user_id,
-        'amount_paid': str(amount_paid),
-        # 'amount_per_user': str(amount_per_user),
-        'users_involved': users_involved
+        'amount_paid': amount_paid,
+        'users_involved': users_id_involved,
+        'expense_type': expense_type
     }
 
     # Return JSON response
