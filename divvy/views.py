@@ -66,7 +66,7 @@ def validate_total(total_dict, expected_total):
 
 
 def validate_created_by(created_by_id, user_id_list):
-    if int(created_by_id) not in user_id_list:
+    if created_by_id not in user_id_list:
         raise ValueError(f"Invalid created by user ID '{created_by_id}'.")
 
 
@@ -165,4 +165,4 @@ def add_expense(request):
     ExpenseOwedBy.objects.bulk_create(exp_owed)
 
     # Return success response
-    return Response(request.data, status=status.HTTP_201_CREATED)
+    return Response({'message': f'Expense successfully added, EID : {expense_id}'}, status=status.HTTP_201_CREATED)
