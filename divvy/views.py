@@ -51,6 +51,10 @@ def validate_total(total_dict, expected_total):
     if sum(total_dict.values()) != expected_total:
         raise ValueError(f"Total amount does not match the specified total amount of {expected_total}.")
 
+def validate_created_by(created_by_id, user_id_list):
+    if int(created_by_id) not in user_id_list:
+        raise ValueError(f"Invalid created by user ID '{created_by_id}'.")
+
 @api_view(['POST'])
 def add_expense(request):
     exp_type = request.data.get('expense_type')
@@ -58,6 +62,7 @@ def add_expense(request):
     amt = request.data.get('total_amount')
     paid_by = request.data.get('paid_by')
     owed_by = request.data.get('owed_by')
+    created_by_id = request.data.get('created_by_id')
 
     user_id_list = list(User.objects.values_list('userId', flat=True))
 
@@ -74,11 +79,16 @@ def add_expense(request):
             validate_total(owed_by, amt)
         elif exp_type == "PERCENT":
             validate_total(owed_by, 100)
+        validate_created_by(created_by_id, user_id_list)
 
     except ValueError as e:
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-    # Add your logic here...
-    
+    # # Create and save the new expense object
+    # expense = Expense.objects.create(desc=desc, amount=amt, createdById_id=created_by_id)
+
+    # # Get the expense ID
+    # expense_id = expense.expenseId
+
     
     return Response(request.data, status=status.HTTP_201_CREATED)
