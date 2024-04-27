@@ -60,30 +60,44 @@ This structure organizes the project's files and directories according to Django
 
 ## Getting Started
 
-To run the application:
+To set up and run the Django project with Django REST Framework:
 
-1. Install dependencies:
-
-    ```bash
-    pip install Flask Flask-SQLAlchemy Flask-Mail APScheduler Flask-Migrate
-    ```
-
-2. Navigate `splitwise/` directory.
-
-    **Note:** Always remember to set up a virtual environment before installing dependencies to keep your project isolated.
-    
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3. Run the application:
+1. Install Django and Django REST Framework:
 
     ```bash
-    python run.py
+    pip install django djangorestframework
     ```
 
-4. Access the application at [http://localhost:5000/](http://localhost:5000/).
+2. Navigate to the project directory:
+
+    ```bash
+    cd splitwise/
+    ```
+
+3. Apply database migrations:
+
+    ```bash
+    python manage.py migrate
+    ```
+
+4. Start the development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+5. Access the application at [http://localhost:8000/](http://localhost:8000/).
+
+6. (Optional) Create a superuser to access the Django admin panel:
+
+    ```bash
+    python manage.py createsuperuser
+    ```
+
+    Follow the prompts to create a username, email, and password.
+
+Now you're ready to use the Splitwise Django application with Django REST Framework!
+
 
 
 
