@@ -12,9 +12,11 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import generics, status
 
+from django.db.models import Sum
+
+
+
 # Create your views here.
-
-
 def homePage(request):
     # return HttpResponse("Welcome to my Django Project")
     return render(request, "index.html")
@@ -30,9 +32,9 @@ class UserListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = UserSerializer
 
 
-class ExpenseListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Expense.objects.all()
-    serializer_class = ExpenseSerializer
+# class ExpenseListCreateAPIView(generics.ListCreateAPIView):
+#     queryset = Expense.objects.all()
+#     serializer_class = ExpenseSerializer
 
 
 def validate_exp_type(exp_type):
@@ -166,3 +168,22 @@ def add_expense(request):
 
     # Return success response
     return Response({'message': f'Expense successfully added, EID : {expense_id}'}, status=status.HTTP_201_CREATED)
+
+
+@api_view(['GET'])
+def show_expenses(request, user_id=None):
+    if user_id:
+        # Get expenses for the specified user
+        user_expenses = Expense.objects.filter(createdById_id=user_id)
+        serializer = ExpenseSerializer(user_expenses, many=True)
+        return Response(serializer.data)
+    else:
+        # Get balances for everyone
+        users = User.objects.all()
+        balances = {}
+        for user in users:
+            expenses_paid = ExpensePaidBy.objects.filter(userId_id=user.userId).aggregate(total_paid=Sum('amount'))['total_paid'] or 0
+            expenses_owed = ExpenseOwedBy.objects.filter(userId_id=user.userId).aggregate(total_owed=Sum('amount'))['total_owed'] or 0
+            balance = expenses_paid - expenses_owed
+            balances[user.name] = balance
+        return Response(balances)
