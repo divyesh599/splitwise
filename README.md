@@ -101,24 +101,20 @@ Now you're ready to use the Splitwise Django application with Django REST Framew
 
 
 
-
-
-
-
-
 ## Class Diagram
 
 ```bash
-+------------------+       +------------------+       +---------------------+       +---------------------+
-|       User       |       |     Expense      |       |   ExpensePaidBy     |       |   ExpenseOwedBy     |
-+------------------+       +------------------+       +---------------------+       +---------------------+
-| - userId         |       | - expenseId      |       | - userId            |       | - userId            |
-| - name           |       | - desc           |       | - expenseId         |       | - expenseId         |
-| - email          |       | - amount         |       | - amountPaid        |       | - amountOwed        |
-| - mobileNumber   |       | - createdById    |       +---------------------+       +---------------------+
-+------------------+       | - createdAt      |       
-                           +------------------+
++------------------+       +-------------------+       +---------------------+       +---------------------+
+|       User       |       |      Expense      |       |   ExpensePaidBy     |       |   ExpenseOwedBy     |
++------------------+       +-------------------+       +---------------------+       +---------------------+
+| - userId (PK)    |       | - expenseId (PK)  |       | - userId (FK)       |       | - userId (FK)       |
+| - name           |       | - desc            |       | - expenseId (FK)    |       | - expenseId (FK)    |
+| - email          |       | - amount          |       | - amountPaid        |       | - amountOwed        |
+| - mobileNumber   |       | - createdById (FK)|       +---------------------+       +---------------------+
++------------------+       | - createdAt       |       
+                           +-------------------+
 ```
+
 
 ### User Class
 
