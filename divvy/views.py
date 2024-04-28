@@ -31,11 +31,6 @@ class UserListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = UserSerializer
 
 
-# class ExpenseListCreateAPIView(generics.ListCreateAPIView):
-#     queryset = Expense.objects.all()
-#     serializer_class = ExpenseSerializer
-
-
 def validate_exp_type(exp_type):
     if exp_type not in ["EQUAL", "EXACT", "PERCENT"]:
         raise ValueError("Expense type must be one of: EQUAL, EXACT, PERCENT.")
@@ -114,7 +109,11 @@ def add_expense(request):
 
     # Create ExpensePaidBy objects for each user who paid
     exp_paid = [
-        ExpensePaidBy(expenseId_id=expense_id, userId_id=int(uid), amount=round(val, 2))
+        ExpensePaidBy(
+            expenseId_id=expense_id,
+            userId_id=int(uid),
+            amount=round(val, 2)
+        )
         for uid, val in paid_by.items()
     ]
 
@@ -139,7 +138,9 @@ def add_expense(request):
         # Create ExpenseOwedBy objects with exact amounts owed
         exp_owed = [
             ExpenseOwedBy(
-                expenseId_id=expense_id, userId_id=int(uid), amount=round(val, 2)
+                expenseId_id=expense_id, 
+                userId_id=int(uid), 
+                amount=round(val, 2)
             )
             for uid, val in owed_by.items()
         ]
