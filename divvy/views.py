@@ -15,7 +15,6 @@ from rest_framework import generics, status
 from django.db.models import Sum
 
 
-
 # Create your views here.
 def homePage(request):
     # return HttpResponse("Welcome to my Django Project")
@@ -109,19 +108,13 @@ def add_expense(request):
 
     # Create and save the new expense object
     expense = Expense.objects.create(
-        desc=desc,
-        amount=amt,
-        createdById_id=created_by_id
+        desc=desc, amount=amt, createdById_id=created_by_id
     )
     expense_id = expense.expenseId
 
     # Create ExpensePaidBy objects for each user who paid
     exp_paid = [
-        ExpensePaidBy(
-            expenseId_id=expense_id,
-            userId_id=int(uid),
-            amount=round(val, 2)
-        )
+        ExpensePaidBy(expenseId_id=expense_id, userId_id=int(uid), amount=round(val, 2))
         for uid, val in paid_by.items()
     ]
 
@@ -146,9 +139,7 @@ def add_expense(request):
         # Create ExpenseOwedBy objects with exact amounts owed
         exp_owed = [
             ExpenseOwedBy(
-                expenseId_id=expense_id,
-                userId_id=int(uid),
-                amount=round(val, 2)
+                expenseId_id=expense_id, userId_id=int(uid), amount=round(val, 2)
             )
             for uid, val in owed_by.items()
         ]
@@ -167,49 +158,82 @@ def add_expense(request):
     ExpenseOwedBy.objects.bulk_create(exp_owed)
 
     # Return success response
-    return Response({'message': f'Expense successfully added, EID : {expense_id}'}, status=status.HTTP_201_CREATED)
+    return Response(
+        {"message": f"Expense successfully added, EID : {expense_id}"},
+        status=status.HTTP_201_CREATED,
+    )
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def show_expenses(request, user_id=None):
     if user_id:
         # Get all expenses for the specified user
         user_expenses = Expense.objects.all()
-        total_paid = ExpensePaidBy.objects.filter(userId_id=user_id).aggregate(total_paid=Sum('amount'))['total_paid'] or 0
-        total_owed = ExpenseOwedBy.objects.filter(userId_id=user_id).aggregate(total_owed=Sum('amount'))['total_owed'] or 0
+        total_paid = (
+            ExpensePaidBy.objects.filter(userId_id=user_id).aggregate(
+                total_paid=Sum("amount")
+            )["total_paid"]
+            or 0
+        )
+        total_owed = (
+            ExpenseOwedBy.objects.filter(userId_id=user_id).aggregate(
+                total_owed=Sum("amount")
+            )["total_owed"]
+            or 0
+        )
         total_balance = total_paid - total_owed
-        
+
         expenses_data = []
         for expense in user_expenses:
-            paid_amount = ExpensePaidBy.objects.filter(expenseId_id=expense.expenseId, userId_id=user_id).aggregate(paid_amount=Sum('amount'))['paid_amount'] or 0
-            owed_amount = ExpenseOwedBy.objects.filter(expenseId_id=expense.expenseId, userId_id=user_id).aggregate(owed_amount=Sum('amount'))['owed_amount'] or 0
+            paid_amount = (
+                ExpensePaidBy.objects.filter(
+                    expenseId_id=expense.expenseId, userId_id=user_id
+                ).aggregate(paid_amount=Sum("amount"))["paid_amount"]
+                or 0
+            )
+            owed_amount = (
+                ExpenseOwedBy.objects.filter(
+                    expenseId_id=expense.expenseId, userId_id=user_id
+                ).aggregate(owed_amount=Sum("amount"))["owed_amount"]
+                or 0
+            )
             balance = paid_amount - owed_amount
-            
+
             expense_info = {
-                'expense_id': expense.expenseId,
-                'description': expense.desc,
-                'amount': expense.amount,
-                'paid_by_user': paid_amount,
-                'owed_by_user': owed_amount,
-                'balance': balance
+                "expense_id": expense.expenseId,
+                "description": expense.desc,
+                "amount": expense.amount,
+                "paid_by_user": paid_amount,
+                "owed_by_user": owed_amount,
+                "balance": balance,
             }
             expenses_data.append(expense_info)
-        
+
         user_expense_info = {
-            'total_paid': total_paid,
-            'total_owed': total_owed,
-            'total_balance': total_balance,
-            'expenses': expenses_data
+            "total_paid": total_paid,
+            "total_owed": total_owed,
+            "total_balance": total_balance,
+            "expenses": expenses_data,
         }
-        
+
         return Response(user_expense_info)
     else:
         # Get balances for everyone
         users = User.objects.all()
         balances = {}
         for user in users:
-            expenses_paid = ExpensePaidBy.objects.filter(userId_id=user.userId).aggregate(total_paid=Sum('amount'))['total_paid'] or 0
-            expenses_owed = ExpenseOwedBy.objects.filter(userId_id=user.userId).aggregate(total_owed=Sum('amount'))['total_owed'] or 0
+            expenses_paid = (
+                ExpensePaidBy.objects.filter(userId_id=user.userId).aggregate(
+                    total_paid=Sum("amount")
+                )["total_paid"]
+                or 0
+            )
+            expenses_owed = (
+                ExpenseOwedBy.objects.filter(userId_id=user.userId).aggregate(
+                    total_owed=Sum("amount")
+                )["total_owed"]
+                or 0
+            )
             balance = expenses_paid - expenses_owed
             balances[user.name] = balance
         return Response(balances)
