@@ -12,7 +12,10 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import generics, status
 
+from django.db import IntegrityError
 from django.db.models import Sum
+from django.core.validators import validate_email
+from django.core.exceptions import ValidationError
 
 
 # Create your views here.
@@ -138,8 +141,8 @@ def add_expense(request):
         # Create ExpenseOwedBy objects with exact amounts owed
         exp_owed = [
             ExpenseOwedBy(
-                expenseId_id=expense_id, 
-                userId_id=int(uid), 
+                expenseId_id=expense_id,
+                userId_id=int(uid),
                 amount=round(val, 2)
             )
             for uid, val in owed_by.items()
@@ -238,3 +241,51 @@ def show_expenses(request, user_id=None):
             balance = expenses_paid - expenses_owed
             balances[user.name] = balance
         return Response(balances)
+
+
+@api_view(['POST'])
+def add_user(request):
+    # Extract data from the request
+    name = request.data.get('name')
+    email = request.data.get('email')
+    mobile_number = request.data.get('mobileNumber')
+
+    try:
+        # Validate input data
+        if not name:
+            raise ValueError("Name field is required.")
+        
+        # Check if the email is valid
+        try:
+            validate_email(email)
+        except ValidationError:
+            raise ValueError("Invalid email format.")
+
+        # Check if the mobile number is valid
+        if not str(mobile_number).isdigit() or len(str(mobile_number)) != 10:
+            raise ValueError("Invalid mobile number format.")
+
+        # Create and save the new user object
+        new_user = User.objects.create(
+            name=name, email=email, mobileNumber=mobile_number
+        )
+
+        # Construct response data
+        response_data = {
+            'message': 'User added successfully',
+            'user_id': new_user.userId,
+            'name': new_user.name,
+            'email': new_user.email,
+            'mobileNumber': new_user.mobileNumber
+        }
+
+        # Return JSON response with success message and user details
+        return Response(response_data, status=status.HTTP_201_CREATED)
+
+    except ValueError as e:
+        # Return error response if validation fails
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    except IntegrityError:
+        # Return error response if the email already exists
+        return Response({'error': 'Email address already exists.'}, status=status.HTTP_400_BAD_REQUEST)
