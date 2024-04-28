@@ -173,10 +173,36 @@ def add_expense(request):
 @api_view(['GET'])
 def show_expenses(request, user_id=None):
     if user_id:
-        # Get expenses for the specified user
-        user_expenses = Expense.objects.filter(createdById_id=user_id)
-        serializer = ExpenseSerializer(user_expenses, many=True)
-        return Response(serializer.data)
+        # Get all expenses for the specified user
+        user_expenses = Expense.objects.all()
+        total_paid = ExpensePaidBy.objects.filter(userId_id=user_id).aggregate(total_paid=Sum('amount'))['total_paid'] or 0
+        total_owed = ExpenseOwedBy.objects.filter(userId_id=user_id).aggregate(total_owed=Sum('amount'))['total_owed'] or 0
+        total_balance = total_paid - total_owed
+        
+        expenses_data = []
+        for expense in user_expenses:
+            paid_amount = ExpensePaidBy.objects.filter(expenseId_id=expense.expenseId, userId_id=user_id).aggregate(paid_amount=Sum('amount'))['paid_amount'] or 0
+            owed_amount = ExpenseOwedBy.objects.filter(expenseId_id=expense.expenseId, userId_id=user_id).aggregate(owed_amount=Sum('amount'))['owed_amount'] or 0
+            balance = paid_amount - owed_amount
+            
+            expense_info = {
+                'expense_id': expense.expenseId,
+                'description': expense.desc,
+                'amount': expense.amount,
+                'paid_by_user': paid_amount,
+                'owed_by_user': owed_amount,
+                'balance': balance
+            }
+            expenses_data.append(expense_info)
+        
+        user_expense_info = {
+            'total_paid': total_paid,
+            'total_owed': total_owed,
+            'total_balance': total_balance,
+            'expenses': expenses_data
+        }
+        
+        return Response(user_expense_info)
     else:
         # Get balances for everyone
         users = User.objects.all()
