@@ -22,9 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homePage),
     path('users/', views.UserListCreateAPIView.as_view(), name='user-list-create'),
-    path('expenses/', views.ExpenseListCreateAPIView.as_view(), name='expense-list-create'),
+    path('add_user/', views.add_user, name='add_user'),
     path('add_expense/', views.add_expense),
-    # path('expenses/paidby/', views.ExpensePaidByListCreateAPIView.as_view(), name='expense-paidby-list-create'),
-    # path('expenses/owedby/', views.ExpenseOwedByListCreateAPIView.as_view(), name='expense-owedby-list-create'),
-    # path('users/<int:pk>/balance/', views.UserBalanceAPIView.as_view(), name='user-balance'),
+    path('expenses/', views.show_expenses, name='show_expenses'),
+    path('expenses/<int:user_id>/', views.show_expenses, name='user_expenses'),
 ]

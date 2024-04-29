@@ -1,11 +1,22 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import User, Expense, ExpensePaidBy, ExpenseOwedBy
-from .serializers import UserSerializer, ExpenseSerializer, ExpensePaidBySerializer, ExpenseOwedBySerializer
+from .serializers import (
+    UserSerializer,
+    ExpenseSerializer,
+    ExpensePaidBySerializer,
+    ExpenseOwedBySerializer,
+)
 
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import generics, status
+
+from django.db import IntegrityError
+from django.db.models import Sum
+from django.core.validators import validate_email
+from django.core.exceptions import ValidationError
+
 
 # Create your views here.
 def homePage(request):
@@ -18,33 +29,263 @@ def allUser(request):
     return HttpResponse(data)
 
 
-
 class UserListCreateAPIView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-class ExpenseListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Expense.objects.all()
-    serializer_class = ExpenseSerializer
+
+def validate_exp_type(exp_type):
+    if exp_type not in ["EQUAL", "EXACT", "PERCENT"]:
+        raise ValueError("Expense type must be one of: EQUAL, EXACT, PERCENT.")
+
+
+def validate_desc(desc):
+    if not isinstance(desc, str):
+        raise ValueError("Description must be a string.")
+
+
+def validate_total_amt(amt):
+    if not isinstance(amt, int):
+        raise ValueError("Total amount must be an integer.")
+
+
+def validate_user_ids(user_ids, user_id_list, field_name):
+    for uid, amt in user_ids.items():
+        if int(uid) not in user_id_list:
+            raise ValueError(f"Invalid user ID '{uid}' in '{field_name}'.")
+        if not isinstance(amt, (int, float)):
+            raise ValueError("Amount must be a number.")
+
+
+def validate_total(total_dict, expected_total):
+    if sum(total_dict.values()) != expected_total:
+        raise ValueError(
+            f"Total amount does not match the specified total amount of {expected_total}."
+        )
+
+
+def validate_created_by(created_by_id, user_id_list):
+    if created_by_id not in user_id_list:
+        raise ValueError(f"Invalid created by user ID '{created_by_id}'.")
+
+
+@api_view(["POST"])
+def add_expense(request):
+    # Extract data from the request
+    exp_type = request.data.get("expense_type")
+    desc = request.data.get("desc")
+    amt = request.data.get("total_amount")
+    paid_by = request.data.get("paid_by")
+    owed_by = request.data.get("owed_by")
+    created_by_id = request.data.get("created_by_id")
+
+    # Get list of user IDs from the database
+    uid_list = list(User.objects.values_list("userId", flat=True))
+
+    # Define validation functions
+    def validate_input():
+        validate_exp_type(exp_type)
+        validate_desc(desc)
+        validate_total_amt(amt)
+        validate_user_ids(paid_by, uid_list, "paid_by")
+        validate_user_ids(owed_by, uid_list, "owed_by")
+        validate_total(paid_by, amt)
+        if exp_type == "EQUAL":
+            validate_total(owed_by, 0)
+        elif exp_type == "EXACT":
+            validate_total(owed_by, amt)
+        elif exp_type == "PERCENT":
+            validate_total(owed_by, 100)
+        validate_created_by(created_by_id, uid_list)
+
+    # Validate input data
+    try:
+        validate_input()
+    except ValueError as e:
+        return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    # Create and save the new expense object
+    expense = Expense.objects.create(
+        desc=desc, amount=amt, createdById_id=created_by_id
+    )
+    expense_id = expense.expenseId
+
+    # Create ExpensePaidBy objects for each user who paid
+    exp_paid = [
+        ExpensePaidBy(
+            expenseId_id=expense_id,
+            userId_id=int(uid),
+            amount=round(val, 2)
+        )
+        for uid, val in paid_by.items()
+    ]
+
+    # Use bulk_create to insert all expenses paid by into the database
+    ExpensePaidBy.objects.bulk_create(exp_paid)
+
+    # Create ExpenseOwedBy objects based on expense type
+    exp_owed = []
+    if exp_type == "EQUAL":
+        # Calculate equal amount owed by each user
+        val = round(amt / len(uid_list), 2)
+        thresh = amt - val * len(uid_list)
+        exp_owed = [
+            ExpenseOwedBy(
+                expenseId_id=expense_id,
+                userId_id=int(uid),
+                amount=val + thresh if i == 0 else val,
+            )
+            for i, uid in enumerate(uid_list)
+        ]
+    elif exp_type == "EXACT":
+        # Create ExpenseOwedBy objects with exact amounts owed
+        exp_owed = [
+            ExpenseOwedBy(
+                expenseId_id=expense_id,
+                userId_id=int(uid),
+                amount=round(val, 2)
+            )
+            for uid, val in owed_by.items()
+        ]
+    elif exp_type == "PERCENT":
+        # Create ExpenseOwedBy objects with amounts calculated based on percentage
+        exp_owed = [
+            ExpenseOwedBy(
+                expenseId_id=expense_id,
+                userId_id=int(uid),
+                amount=round((amt * val) / 100, 2),
+            )
+            for uid, val in owed_by.items()
+        ]
+
+    # Use bulk_create to insert all expenses owed by into the database
+    ExpenseOwedBy.objects.bulk_create(exp_owed)
+
+    # Return success response
+    return Response(
+        {"message": f"Expense successfully added, EID : {expense_id}"},
+        status=status.HTTP_201_CREATED,
+    )
+
+
+@api_view(["GET"])
+def show_expenses(request, user_id=None):
+    if user_id:
+        # Get all expenses for the specified user
+        user_expenses = Expense.objects.all()
+        total_paid = (
+            ExpensePaidBy.objects.filter(userId_id=user_id).aggregate(
+                total_paid=Sum("amount")
+            )["total_paid"]
+            or 0
+        )
+        total_owed = (
+            ExpenseOwedBy.objects.filter(userId_id=user_id).aggregate(
+                total_owed=Sum("amount")
+            )["total_owed"]
+            or 0
+        )
+        total_balance = total_paid - total_owed
+
+        expenses_data = []
+        for expense in user_expenses:
+            paid_amount = (
+                ExpensePaidBy.objects.filter(
+                    expenseId_id=expense.expenseId, userId_id=user_id
+                ).aggregate(paid_amount=Sum("amount"))["paid_amount"]
+                or 0
+            )
+            owed_amount = (
+                ExpenseOwedBy.objects.filter(
+                    expenseId_id=expense.expenseId, userId_id=user_id
+                ).aggregate(owed_amount=Sum("amount"))["owed_amount"]
+                or 0
+            )
+            balance = paid_amount - owed_amount
+
+            expense_info = {
+                "expense_id": expense.expenseId,
+                "description": expense.desc,
+                "amount": expense.amount,
+                "paid_by_user": paid_amount,
+                "owed_by_user": owed_amount,
+                "balance": balance,
+            }
+            expenses_data.append(expense_info)
+
+        user_expense_info = {
+            "total_paid": total_paid,
+            "total_owed": total_owed,
+            "total_balance": total_balance,
+            "expenses": expenses_data,
+        }
+
+        return Response(user_expense_info)
+    else:
+        # Get balances for everyone
+        users = User.objects.all()
+        balances = {}
+        for user in users:
+            expenses_paid = (
+                ExpensePaidBy.objects.filter(userId_id=user.userId).aggregate(
+                    total_paid=Sum("amount")
+                )["total_paid"]
+                or 0
+            )
+            expenses_owed = (
+                ExpenseOwedBy.objects.filter(userId_id=user.userId).aggregate(
+                    total_owed=Sum("amount")
+                )["total_owed"]
+                or 0
+            )
+            balance = expenses_paid - expenses_owed
+            balances[user.name] = balance
+        return Response(balances)
 
 
 @api_view(['POST'])
-def add_expense(request):
+def add_user(request):
     # Extract data from the request
-    paid_by_user_id = request.data.get('paid_by_user_id')
-    amount_paid = request.data.get('amount_paid')
-    users_id_involved = request.data.get('users_id_involved')
-    expense_type = request.data.get('expense_type')
+    name = request.data.get('name')
+    email = request.data.get('email')
+    mobile_number = request.data.get('mobileNumber')
 
-    # Construct JSON response
-    response_data = {
-        'message': 'Expense added successfully',
-        'paid_by_user_id': paid_by_user_id,
-        'amount_paid': amount_paid,
-        'users_involved': users_id_involved,
-        'expense_type': expense_type
-    }
+    try:
+        # Validate input data
+        if not name:
+            raise ValueError("Name field is required.")
+        
+        # Check if the email is valid
+        try:
+            validate_email(email)
+        except ValidationError:
+            raise ValueError("Invalid email format.")
 
-    # Return JSON response
-    return Response(response_data, status=status.HTTP_201_CREATED)
+        # Check if the mobile number is valid
+        if not str(mobile_number).isdigit() or len(str(mobile_number)) != 10:
+            raise ValueError("Invalid mobile number format.")
 
+        # Create and save the new user object
+        new_user = User.objects.create(
+            name=name, email=email, mobileNumber=mobile_number
+        )
+
+        # Construct response data
+        response_data = {
+            'message': 'User added successfully',
+            'user_id': new_user.userId,
+            'name': new_user.name,
+            'email': new_user.email,
+            'mobileNumber': new_user.mobileNumber
+        }
+
+        # Return JSON response with success message and user details
+        return Response(response_data, status=status.HTTP_201_CREATED)
+
+    except ValueError as e:
+        # Return error response if validation fails
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    except IntegrityError:
+        # Return error response if the email already exists
+        return Response({'error': 'Email address already exists.'}, status=status.HTTP_400_BAD_REQUEST)

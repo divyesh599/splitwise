@@ -8,71 +8,95 @@ Splitwise project is an example Flask web application designed to manage expense
 
 ```lua
 splitwise/
-|-- app/
-|   |-- __init__.py
-|   |-- models.py
-|   |-- routes.py
-|   |-- services.py
-|   |-- templates/
-|   |-- static/
-|-- config.py
-|-- splitwise.db
-|-- run.py
+├── db.sqlite3
+├── manage.py
+├── splitwise/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── divvy/
+│   ├── migrations/
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tests.py
+│   └── views.py
+├── templates/
+│   └── index.html
+└── Backend Programming Assignment - Splitwise Indore.pdf
 ```
 
 
 ## Project Structure
 
-- The `app/` directory is the core of the application, organized into the following components:
+- The `splitwise/` directory serves as the root directory of the Django project.
 
-    - **`__init__.py`**: Initializes the Flask application.
+    - **`manage.py`**: A command-line utility for managing the project.
 
-    - **`models.py`**: Defines the database models.
+    - **`splitwise/`**: The main Django app for the Splitwise project.
 
-    - **`routes.py`**: Manages route definitions and request handling logic.
+        - **`__init__.py`**: Marks the directory as a Python package.
+        
+        - **`settings.py`**: Contains project settings and configurations.
+        
+        - **`urls.py`**: Defines URL patterns for routing requests to views.
+        
+        - **`wsgi.py`**: Entry point for WSGI-compatible web servers.
 
-    - **`services.py`**: Contains additional business logic or services.
+    - **`divvy/`**: A secondary app within the project, possibly handling expense-related functionalities.
 
-    - **`templates/`**: This directory is a placeholder for HTML templates.
+        - **`migrations/`**: Contains database migration files.
+        
+        - **`__init__.py`**, **`admin.py`**, **`apps.py`**, **`models.py`**, **`serializers.py`**, **`tests.py`**, **`views.py`**: Standard Django files for defining models, views, serializers, tests, etc.
 
-    - **`static/`**: Holds static files such as stylesheets and JavaScript.
+    - **`templates/`**: Directory containing HTML templates for rendering views.
 
-- The `config.py` file serves as the configuration hub for the application.
+This structure organizes the project's files and directories according to Django conventions, facilitating easy management and navigation.
 
-- The `splitwise.db` file is an SQLite database used to store application data.
-
-- The `run.py` script is designed to execute the Flask application.
 
 ## Getting Started
 
-To run the application:
+To set up and run the Django project with Django REST Framework:
 
-1. Install dependencies:
-
-    ```bash
-    pip install Flask Flask-SQLAlchemy Flask-Mail APScheduler Flask-Migrate
-    ```
-
-2. Navigate `splitwise/` directory.
-
-    **Note:** Always remember to set up a virtual environment before installing dependencies to keep your project isolated.
-    
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3. Run the application:
+1. Install Django and Django REST Framework:
 
     ```bash
-    python run.py
+    pip install django djangorestframework
     ```
 
-4. Access the application at [http://localhost:5000/](http://localhost:5000/).
+2. Navigate to the project directory:
 
+    ```bash
+    cd splitwise/
+    ```
 
+3. Apply database migrations:
 
+    ```bash
+    python manage.py migrate
+    ```
 
+4. Start the development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+5. Access the application at [http://localhost:8000/](http://localhost:8000/).
+
+6. (Optional) Create a superuser to access the Django admin panel:
+
+    ```bash
+    python manage.py createsuperuser
+    ```
+
+    Follow the prompts to create a username, email, and password.
+
+Now you're ready to use the Splitwise Django application with Django REST Framework!
 
 
 
@@ -80,16 +104,17 @@ To run the application:
 ## Class Diagram
 
 ```bash
-+------------------+       +------------------+       +---------------------+       +---------------------+
-|       User       |       |     Expense      |       |   ExpensePaidBy     |       |   ExpenseOwedBy     |
-+------------------+       +------------------+       +---------------------+       +---------------------+
-| - userId         |       | - expenseId      |       | - userId            |       | - userId            |
-| - name           |       | - desc           |       | - expenseId         |       | - expenseId         |
-| - email          |       | - amount         |       | - amountPaid        |       | - amountOwed        |
-| - mobileNumber   |       | - createdById    |       +---------------------+       +---------------------+
-+------------------+       | - createdAt      |       
-                           +------------------+
++------------------+       +-------------------+       +---------------------+       +---------------------+
+|       User       |       |      Expense      |       |   ExpensePaidBy     |       |   ExpenseOwedBy     |
++------------------+       +-------------------+       +---------------------+       +---------------------+
+| - userId (PK)    |       | - expenseId (PK)  |       | - userId (FK)       |       | - userId (FK)       |
+| - name           |       | - desc            |       | - expenseId (FK)    |       | - expenseId (FK)    |
+| - email          |       | - amount          |       | - amountPaid        |       | - amountOwed        |
+| - mobileNumber   |       | - createdById (FK)|       +---------------------+       +---------------------+
++------------------+       | - createdAt       |       
+                           +-------------------+
 ```
+
 
 ### User Class
 
