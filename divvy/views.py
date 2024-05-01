@@ -98,6 +98,15 @@ def add_expense(request):
             validate_total(owed_by, 100)
         validate_created_by(created_by_id, uid_list)
 
+        # Check maximum number of participants
+        if len(paid_by) > 1000 or len(owed_by) > 1000:
+            raise ValueError("The maximum number of participants for an expense is 1000.")
+
+        # Check maximum amount for an expense
+        if amt > 100000000:
+            raise ValueError("The maximum amount for an expense is INR 1,00,00,000.")
+
+
     # Validate input data
     try:
         validate_input()
