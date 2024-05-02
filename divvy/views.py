@@ -1,4 +1,9 @@
-from django.shortcuts import render
+"""
+Created on 2024-05-02
+by Divyesh Ranpariya (handle: divyesh599)
+"""
+
+
 from django.http import HttpResponse
 from .models import User, Expense, ExpensePaidBy, ExpenseOwedBy
 from .serializers import (
@@ -16,6 +21,25 @@ from django.db import IntegrityError
 from django.db.models import Sum
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+
+
+def register_user(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+    else:
+        form = UserCreationForm()
+    return render(request, 'register.html', {'form': form})
+
+
+@login_required
+def user_profile(request):
+    return render(request, 'profile.html')
 
 
 # Create your views here.
@@ -100,12 +124,13 @@ def add_expense(request):
 
         # Check maximum number of participants
         if len(paid_by) > 1000 or len(owed_by) > 1000:
-            raise ValueError("The maximum number of participants for an expense is 1000.")
+            raise ValueError(
+                "The maximum number of participants for an expense is 1000.")
 
         # Check maximum amount for an expense
         if amt > 100000000:
-            raise ValueError("The maximum amount for an expense is INR 1,00,00,000.")
-
+            raise ValueError(
+                "The maximum amount for an expense is INR 1,00,00,000.")
 
     # Validate input data
     try:
@@ -263,7 +288,7 @@ def add_user(request):
         # Validate input data
         if not name:
             raise ValueError("Name field is required.")
-        
+
         # Check if the email is valid
         try:
             validate_email(email)
