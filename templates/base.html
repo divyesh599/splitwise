@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Website{% endblock %}</title>
-    <!-- Add your CSS and JavaScript links here -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>{% block title %}Splitwise{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
 
 <header>
-    <h1>My Website</h1>
-    <!-- Add your navigation menu here -->
+    <h1>Splitwise</h1>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About</a></li>
-            <!-- Add more menu items as needed -->
+            <li><a href="{% url 'home' %}">Home</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+            {% endif %}
         </ul>
     </nav>
 </header>
 
 <main>
     {% block content %}
-    <!-- This block will be overridden by child templates -->
     {% endblock %}
 </main>
 
 <footer>
-    <!-- Add your footer content here -->
-    <p>&copy; 2024 My Website. All rights reserved.</p>
+    <p>&copy; 2024 Splitwise. All rights reserved.</p>
 </footer>
 
 </body>
