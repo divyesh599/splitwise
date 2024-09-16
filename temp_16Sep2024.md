@@ -67,7 +67,6 @@ CREATE TABLE Expense (
     expenseId INT PRIMARY KEY AUTO_INCREMENT,
     description VARCHAR(255) NOT NULL,
     totalAmount DECIMAL(10, 2) NOT NULL,
-    totalPaid DECIMAL(10, 2) DEFAULT 0.00, -- The total amount paid for the expense
     createdById INT, -- The userId of the expense creator
     groupId INT, -- Nullable if the expense is not tied to a group
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
