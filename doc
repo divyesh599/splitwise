@@ -1,0 +1,2804 @@
+[2025-02-19T14:56:46.514Z] Document updating {
+  "type": "documents:updating",
+  "data": {
+    "current": 1,
+    "remaining": 0,
+    "total": 1,
+    "document": {
+      "document": {
+        "type": "life_funnel",
+        "lang": "en-us",
+        "uid": "hk-life-fe",
+        "tags": [],
+        "data": {
+          "meta_title": "Life Insurance and Savings | Quote Now | AXA Hong Kong",
+          "meta_description": "With our comprehensive life protection, we are here to help you build a promising future for yourself and your loved ones. Get a free consultation now.",
+          "meta_keywords": "life insurance, life insurance hong kong, life insurance hk, axa life insurance",
+          "spwl_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "wealth_advance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "flexi_power_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "smart_protector_ii_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "fortune_protector_life_insurance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "higher_protection_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "a. “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.\nb. \"age 138\" refers to the policy anniversary on or immediately following the insured's 138th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the protection amount needed, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and LifeDelight offers USD policy currency only. The amount in this webpage is converted to HKD in an preset exchange rate of 1 USD = 8 HKD for illustrative propose only. The actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures in relation to monthly premium are rounded to 1 decimal place.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "protection_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The guaranteed percentage and schedule of guaranteed cash coupon are different for plans with different premium payment period, please refer to the relevant product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "“age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "higher_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "“6 Pay 12” refers to the plan with premium payment term of 6 years and an accumulation period of 12 years. Please refer to the product brochure for details on other available options.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": " “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier, except for the following products: For Wealth Genius Income Plan, “Up to age 138” refers to the day before the maturity date (the maturity date is the policy anniversary on or immediately following the initial insured’s 138th birthday, whichever is earlier) ; for Flexi Power Saver, Wealth Ultra Savings Plan, FortuneXtra Savings Plan, Max Wealth Insurance Plan and WealthAhead Savings Plan, “age 138” refers to the policy anniversary on or immediately following the latest insured’s 138th birthday, whichever the earlier ; for Wealth Advance Savings Series II, “age 100” refers to the policy anniversary on or immediately following the latest insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HKD1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy, except for the notional amount adjustment# for Flexi Power Saver; vii) there is no supplement attached to the policy throughout the contract term of the policy.\n#For Flexi Power Saver, notional amount adjustment is the adjustment made to the notional amount of the basic plan by multiplying the notional amount as at the end of the accumulation period by the percentage of the policy value allocated to the Growth Account on the first day of the flexi saving period.",
+              "spans": [
+                {
+                  "start": 586,
+                  "end": 587,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                },
+                {
+                  "start": 706,
+                  "end": 707,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "For Flexi Power Saver, it is also assumed that i) the policy value at the end of the accumulation period will be allocated to the Growth Account and the Flexi Account on the first day of the flexi saving period according to the default Dual Account allocation percentage; ii) Growth Account Lock-in Option has never been exercised.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Max Wealth Insurance Plan, Wealth Ultra Savings Plan, Wealth Genius Income Plan, Wealth Advance Savings Series II and Flexi Power Saver are denominated in USD only. FortuneXtra Savings Plan and WealthAhead Savings Plan offers a choice of up to 9 and 3 policy currencies (both including HKD), respectively, please refer to the respective product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Subject to terms and conditions, please refer to the promotional leaflet of AXA “WealthAhead Savings Plan Guaranteed Preferential Interest Rate” Programme for details. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "retirement_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The plan is denominated in USD only. Figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            }
+          ],
+          "retirement_planning_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "For eligibility of tax deductions, please refer to Tax deduction under the section Important information and the website of the Inland Revenue Department (“IRD”) or to contact the IRD directly for any tax related enquiries.",
+              "spans": []
+            }
+          ],
+          "retirement_income_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender and the amount of monthly spending, and it is rounded to the nearest whole number.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefit (i.e. non-guaranteed terminal dividend) which is projected using the Company’s dividend scale determined under the current assumed investment return and are not guaranteed. The dividend scale may be changed by the Company from time to time. The actual amounts payable may change anytime with the values being higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) all premiums are paid in full when due and as planned; ii) neither dementia companion benefit, death benefit nor surrender value has been paid before or becomes payable; iii) no withdrawal has been made before; iv) the notional amount of the policy remain unchanged throughout the contract term of the policy; v) no terminal dividend lock-in option has been exercised; and vi) no levy on insurance premiums is included throughout the term of the policy. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and the monthly guaranteed annuity payment at the time of policy issuance.",
+              "spans": []
+            }
+          ]
+        },
+        "id": "Z7XxLRIAAC0ADXRE"
+      },
+      "title": "Untitled Document",
+      "originalPrismicDocument": {
+        "id": "YLCjlRcAADMAeHQN",
+        "uid": "hk-life-fe",
+        "type": "life_funnel",
+        "href": "https://hk-axa-web-2020.cdn.axa-contento-118412.eu/api/v2/documents/search?ref=Z7WfXxIAACYA0zf4&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YLCjlRcAADMAeHQN%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-12-02T03:19:42+0000",
+        "last_publication_date": "2025-01-15T01:06:50+0000",
+        "slugs": [
+          "hk-life-fe"
+        ],
+        "linked_documents": [
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          },
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          },
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          }
+        ],
+        "lang": "en-us",
+        "alternate_languages": [
+          {
+            "id": "YLCkqBcAACwAeHjW",
+            "uid": "hk-life-fe",
+            "type": "life_funnel",
+            "lang": "zh-hk"
+          }
+        ],
+        "data": {
+          "meta_title": "Life Insurance and Savings | Quote Now | AXA Hong Kong",
+          "meta_description": "With our comprehensive life protection, we are here to help you build a promising future for yourself and your loved ones. Get a free consultation now.",
+          "meta_keywords": "life insurance, life insurance hong kong, life insurance hk, axa life insurance",
+          "spwl_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "wealth_advance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "flexi_power_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "smart_protector_ii_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "fortune_protector_life_insurance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "higher_protection_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "a. “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.\nb. \"age 138\" refers to the policy anniversary on or immediately following the insured's 138th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the protection amount needed, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and LifeDelight offers USD policy currency only. The amount in this webpage is converted to HKD in an preset exchange rate of 1 USD = 8 HKD for illustrative propose only. The actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures in relation to monthly premium are rounded to 1 decimal place.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "protection_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The guaranteed percentage and schedule of guaranteed cash coupon are different for plans with different premium payment period, please refer to the relevant product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "“age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "higher_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "“6 Pay 12” refers to the plan with premium payment term of 6 years and an accumulation period of 12 years. Please refer to the product brochure for details on other available options.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": " “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier, except for the following products: For Wealth Genius Income Plan, “Up to age 138” refers to the day before the maturity date (the maturity date is the policy anniversary on or immediately following the initial insured’s 138th birthday, whichever is earlier) ; for Flexi Power Saver, Wealth Ultra Savings Plan, FortuneXtra Savings Plan, Max Wealth Insurance Plan and WealthAhead Savings Plan, “age 138” refers to the policy anniversary on or immediately following the latest insured’s 138th birthday, whichever the earlier ; for Wealth Advance Savings Series II, “age 100” refers to the policy anniversary on or immediately following the latest insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HKD1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy, except for the notional amount adjustment# for Flexi Power Saver; vii) there is no supplement attached to the policy throughout the contract term of the policy.\n#For Flexi Power Saver, notional amount adjustment is the adjustment made to the notional amount of the basic plan by multiplying the notional amount as at the end of the accumulation period by the percentage of the policy value allocated to the Growth Account on the first day of the flexi saving period.",
+              "spans": [
+                {
+                  "start": 586,
+                  "end": 587,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                },
+                {
+                  "start": 706,
+                  "end": 707,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "For Flexi Power Saver, it is also assumed that i) the policy value at the end of the accumulation period will be allocated to the Growth Account and the Flexi Account on the first day of the flexi saving period according to the default Dual Account allocation percentage; ii) Growth Account Lock-in Option has never been exercised.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Max Wealth Insurance Plan, Wealth Ultra Savings Plan, Wealth Genius Income Plan, Wealth Advance Savings Series II and Flexi Power Saver are denominated in USD only. FortuneXtra Savings Plan and WealthAhead Savings Plan offers a choice of up to 9 and 3 policy currencies (both including HKD), respectively, please refer to the respective product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Subject to terms and conditions, please refer to the promotional leaflet of AXA “WealthAhead Savings Plan Guaranteed Preferential Interest Rate” Programme for details. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "retirement_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The plan is denominated in USD only. Figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            }
+          ],
+          "retirement_planning_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "For eligibility of tax deductions, please refer to Tax deduction under the section Important information and the website of the Inland Revenue Department (“IRD”) or to contact the IRD directly for any tax related enquiries.",
+              "spans": []
+            }
+          ],
+          "retirement_income_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender and the amount of monthly spending, and it is rounded to the nearest whole number.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefit (i.e. non-guaranteed terminal dividend) which is projected using the Company’s dividend scale determined under the current assumed investment return and are not guaranteed. The dividend scale may be changed by the Company from time to time. The actual amounts payable may change anytime with the values being higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) all premiums are paid in full when due and as planned; ii) neither dementia companion benefit, death benefit nor surrender value has been paid before or becomes payable; iii) no withdrawal has been made before; iv) the notional amount of the policy remain unchanged throughout the contract term of the policy; v) no terminal dividend lock-in option has been exercised; and vi) no levy on insurance premiums is included throughout the term of the policy. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and the monthly guaranteed annuity payment at the time of policy issuance.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+[2025-02-19T14:56:48.780Z] Migration Error in batch 1: {
+  "batchNumber": 1,
+  "totalDocuments": 1,
+  "documents": [
+    {
+      "id": "YLCjlRcAADMAeHQN",
+      "uid": "hk-life-fe",
+      "name": "Untitled Document"
+    }
+  ],
+  "error": {
+    "message": "An invalid API response was returned",
+    "response": [
+      {
+        "property": "data.higher_protection_disclaimer.8.spans.1",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      },
+      {
+        "property": "data.protection_saving_disclaimer.8.spans.1",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      },
+      {
+        "property": "data.higher_saving_disclaimer.12.spans.0",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      }
+    ],
+    "url": "https://migration.prismic.io/documents/Z7XxLRIAAC0ADXRE"
+  }
+}
+[2025-02-20T13:01:39.399Z] Document updating {
+  "type": "documents:updating",
+  "data": {
+    "current": 1,
+    "remaining": 0,
+    "total": 1,
+    "document": {
+      "document": {
+        "type": "life_funnel",
+        "lang": "en-us",
+        "uid": "hk-life-fe",
+        "tags": [],
+        "data": {
+          "meta_title": "Life Insurance and Savings | Quote Now | AXA Hong Kong",
+          "meta_description": "With our comprehensive life protection, we are here to help you build a promising future for yourself and your loved ones. Get a free consultation now.",
+          "meta_keywords": "life insurance, life insurance hong kong, life insurance hk, axa life insurance",
+          "spwl_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "wealth_advance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "flexi_power_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "smart_protector_ii_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "fortune_protector_life_insurance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "higher_protection_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "a. “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.\nb. \"age 138\" refers to the policy anniversary on or immediately following the insured's 138th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the protection amount needed, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and LifeDelight offers USD policy currency only. The amount in this webpage is converted to HKD in an preset exchange rate of 1 USD = 8 HKD for illustrative propose only. The actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures in relation to monthly premium are rounded to 1 decimal place.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "protection_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The guaranteed percentage and schedule of guaranteed cash coupon are different for plans with different premium payment period, please refer to the relevant product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "“age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "higher_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "“6 Pay 12” refers to the plan with premium payment term of 6 years and an accumulation period of 12 years. Please refer to the product brochure for details on other available options.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": " “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier, except for the following products: For Wealth Genius Income Plan, “Up to age 138” refers to the day before the maturity date (the maturity date is the policy anniversary on or immediately following the initial insured’s 138th birthday, whichever is earlier) ; for Flexi Power Saver, Wealth Ultra Savings Plan, FortuneXtra Savings Plan, Max Wealth Insurance Plan and WealthAhead Savings Plan, “age 138” refers to the policy anniversary on or immediately following the latest insured’s 138th birthday, whichever the earlier ; for Wealth Advance Savings Series II, “age 100” refers to the policy anniversary on or immediately following the latest insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HKD1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy, except for the notional amount adjustment# for Flexi Power Saver; vii) there is no supplement attached to the policy throughout the contract term of the policy.\n#For Flexi Power Saver, notional amount adjustment is the adjustment made to the notional amount of the basic plan by multiplying the notional amount as at the end of the accumulation period by the percentage of the policy value allocated to the Growth Account on the first day of the flexi saving period.",
+              "spans": [
+                {
+                  "start": 586,
+                  "end": 587,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                },
+                {
+                  "start": 706,
+                  "end": 707,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "For Flexi Power Saver, it is also assumed that i) the policy value at the end of the accumulation period will be allocated to the Growth Account and the Flexi Account on the first day of the flexi saving period according to the default Dual Account allocation percentage; ii) Growth Account Lock-in Option has never been exercised.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Max Wealth Insurance Plan, Wealth Ultra Savings Plan, Wealth Genius Income Plan, Wealth Advance Savings Series II and Flexi Power Saver are denominated in USD only. FortuneXtra Savings Plan and WealthAhead Savings Plan offers a choice of up to 9 and 3 policy currencies (both including HKD), respectively, please refer to the respective product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Subject to terms and conditions, please refer to the promotional leaflet of AXA “WealthAhead Savings Plan Guaranteed Preferential Interest Rate” Programme for details. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "retirement_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The plan is denominated in USD only. Figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            }
+          ],
+          "retirement_planning_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "For eligibility of tax deductions, please refer to Tax deduction under the section Important information and the website of the Inland Revenue Department (“IRD”) or to contact the IRD directly for any tax related enquiries.",
+              "spans": []
+            }
+          ],
+          "retirement_income_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender and the amount of monthly spending, and it is rounded to the nearest whole number.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefit (i.e. non-guaranteed terminal dividend) which is projected using the Company’s dividend scale determined under the current assumed investment return and are not guaranteed. The dividend scale may be changed by the Company from time to time. The actual amounts payable may change anytime with the values being higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) all premiums are paid in full when due and as planned; ii) neither dementia companion benefit, death benefit nor surrender value has been paid before or becomes payable; iii) no withdrawal has been made before; iv) the notional amount of the policy remain unchanged throughout the contract term of the policy; v) no terminal dividend lock-in option has been exercised; and vi) no levy on insurance premiums is included throughout the term of the policy. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and the monthly guaranteed annuity payment at the time of policy issuance.",
+              "spans": []
+            }
+          ]
+        },
+        "id": "Z7cnsxIAAC4AD3K5"
+      },
+      "title": "Untitled Document",
+      "originalPrismicDocument": {
+        "id": "YLCjlRcAADMAeHQN",
+        "uid": "hk-life-fe",
+        "type": "life_funnel",
+        "href": "https://hk-axa-web-2020.cdn.axa-contento-118412.eu/api/v2/documents/search?ref=Z7b3nxIAACcA2SQa&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YLCjlRcAADMAeHQN%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-12-02T03:19:42+0000",
+        "last_publication_date": "2025-01-15T01:06:50+0000",
+        "slugs": [
+          "hk-life-fe"
+        ],
+        "linked_documents": [
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          },
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          },
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          }
+        ],
+        "lang": "en-us",
+        "alternate_languages": [
+          {
+            "id": "YLCkqBcAACwAeHjW",
+            "uid": "hk-life-fe",
+            "type": "life_funnel",
+            "lang": "zh-hk"
+          }
+        ],
+        "data": {
+          "meta_title": "Life Insurance and Savings | Quote Now | AXA Hong Kong",
+          "meta_description": "With our comprehensive life protection, we are here to help you build a promising future for yourself and your loved ones. Get a free consultation now.",
+          "meta_keywords": "life insurance, life insurance hong kong, life insurance hk, axa life insurance",
+          "spwl_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "wealth_advance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "flexi_power_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "smart_protector_ii_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "fortune_protector_life_insurance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "higher_protection_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "a. “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.\nb. \"age 138\" refers to the policy anniversary on or immediately following the insured's 138th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the protection amount needed, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and LifeDelight offers USD policy currency only. The amount in this webpage is converted to HKD in an preset exchange rate of 1 USD = 8 HKD for illustrative propose only. The actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures in relation to monthly premium are rounded to 1 decimal place.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "protection_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The guaranteed percentage and schedule of guaranteed cash coupon are different for plans with different premium payment period, please refer to the relevant product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "“age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "higher_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "“6 Pay 12” refers to the plan with premium payment term of 6 years and an accumulation period of 12 years. Please refer to the product brochure for details on other available options.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": " “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier, except for the following products: For Wealth Genius Income Plan, “Up to age 138” refers to the day before the maturity date (the maturity date is the policy anniversary on or immediately following the initial insured’s 138th birthday, whichever is earlier) ; for Flexi Power Saver, Wealth Ultra Savings Plan, FortuneXtra Savings Plan, Max Wealth Insurance Plan and WealthAhead Savings Plan, “age 138” refers to the policy anniversary on or immediately following the latest insured’s 138th birthday, whichever the earlier ; for Wealth Advance Savings Series II, “age 100” refers to the policy anniversary on or immediately following the latest insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HKD1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy, except for the notional amount adjustment# for Flexi Power Saver; vii) there is no supplement attached to the policy throughout the contract term of the policy.\n#For Flexi Power Saver, notional amount adjustment is the adjustment made to the notional amount of the basic plan by multiplying the notional amount as at the end of the accumulation period by the percentage of the policy value allocated to the Growth Account on the first day of the flexi saving period.",
+              "spans": [
+                {
+                  "start": 586,
+                  "end": 587,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                },
+                {
+                  "start": 706,
+                  "end": 707,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "For Flexi Power Saver, it is also assumed that i) the policy value at the end of the accumulation period will be allocated to the Growth Account and the Flexi Account on the first day of the flexi saving period according to the default Dual Account allocation percentage; ii) Growth Account Lock-in Option has never been exercised.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Max Wealth Insurance Plan, Wealth Ultra Savings Plan, Wealth Genius Income Plan, Wealth Advance Savings Series II and Flexi Power Saver are denominated in USD only. FortuneXtra Savings Plan and WealthAhead Savings Plan offers a choice of up to 9 and 3 policy currencies (both including HKD), respectively, please refer to the respective product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Subject to terms and conditions, please refer to the promotional leaflet of AXA “WealthAhead Savings Plan Guaranteed Preferential Interest Rate” Programme for details. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "retirement_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The plan is denominated in USD only. Figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            }
+          ],
+          "retirement_planning_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "For eligibility of tax deductions, please refer to Tax deduction under the section Important information and the website of the Inland Revenue Department (“IRD”) or to contact the IRD directly for any tax related enquiries.",
+              "spans": []
+            }
+          ],
+          "retirement_income_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender and the amount of monthly spending, and it is rounded to the nearest whole number.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefit (i.e. non-guaranteed terminal dividend) which is projected using the Company’s dividend scale determined under the current assumed investment return and are not guaranteed. The dividend scale may be changed by the Company from time to time. The actual amounts payable may change anytime with the values being higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) all premiums are paid in full when due and as planned; ii) neither dementia companion benefit, death benefit nor surrender value has been paid before or becomes payable; iii) no withdrawal has been made before; iv) the notional amount of the policy remain unchanged throughout the contract term of the policy; v) no terminal dividend lock-in option has been exercised; and vi) no levy on insurance premiums is included throughout the term of the policy. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and the monthly guaranteed annuity payment at the time of policy issuance.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+[2025-02-20T13:01:41.807Z] Migration Error in batch 1: {
+  "batchNumber": 1,
+  "totalDocuments": 1,
+  "documents": [
+    {
+      "id": "YLCjlRcAADMAeHQN",
+      "uid": "hk-life-fe",
+      "name": "Untitled Document"
+    }
+  ],
+  "error": {
+    "message": "An invalid API response was returned",
+    "response": [
+      {
+        "property": "data.higher_protection_disclaimer.8.spans.1",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      },
+      {
+        "property": "data.protection_saving_disclaimer.8.spans.1",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      },
+      {
+        "property": "data.higher_saving_disclaimer.12.spans.0",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      }
+    ],
+    "url": "https://migration.prismic.io/documents/Z7cnsxIAAC4AD3K5"
+  }
+}
+[2025-02-20T13:06:08.766Z] Migration Error in batch 1: {
+  "batchNumber": 1,
+  "totalDocuments": 1,
+  "documents": [
+    {
+      "id": "YLCjlRcAADMAeHQN",
+      "uid": "hk-life-fe",
+      "name": "Untitled Document"
+    }
+  ],
+  "error": {
+    "message": "An invalid API response was returned",
+    "response": "A document with this UID already exists",
+    "url": "https://migration.prismic.io/documents"
+  }
+}
+[2025-02-20T13:08:11.849Z] Migration Error in batch 1: {
+  "batchNumber": 1,
+  "totalDocuments": 1,
+  "documents": [
+    {
+      "id": "YLCjlRcAADMAeHQN",
+      "uid": "hk-life-fe",
+      "name": "Untitled Document"
+    }
+  ],
+  "error": {
+    "message": "An invalid API response was returned",
+    "response": "A document with this UID already exists",
+    "url": "https://migration.prismic.io/documents"
+  }
+}
+[2025-02-20T13:19:45.815Z] Document updating {
+  "type": "documents:updating",
+  "data": {
+    "current": 1,
+    "remaining": 0,
+    "total": 1,
+    "document": {
+      "document": {
+        "type": "life_funnel",
+        "lang": "en-us",
+        "uid": "hk-life-fe",
+        "tags": [],
+        "data": {
+          "meta_title": "Life Insurance and Savings | Quote Now | AXA Hong Kong",
+          "meta_description": "With our comprehensive life protection, we are here to help you build a promising future for yourself and your loved ones. Get a free consultation now.",
+          "meta_keywords": "life insurance, life insurance hong kong, life insurance hk, axa life insurance",
+          "spwl_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "wealth_advance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "flexi_power_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "smart_protector_ii_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "fortune_protector_life_insurance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "higher_protection_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "a. “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.\nb. \"age 138\" refers to the policy anniversary on or immediately following the insured's 138th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the protection amount needed, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and LifeDelight offers USD policy currency only. The amount in this webpage is converted to HKD in an preset exchange rate of 1 USD = 8 HKD for illustrative propose only. The actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures in relation to monthly premium are rounded to 1 decimal place.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "protection_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The guaranteed percentage and schedule of guaranteed cash coupon are different for plans with different premium payment period, please refer to the relevant product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "“age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "higher_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "“6 Pay 12” refers to the plan with premium payment term of 6 years and an accumulation period of 12 years. Please refer to the product brochure for details on other available options.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": " “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier, except for the following products: For Wealth Genius Income Plan, “Up to age 138” refers to the day before the maturity date (the maturity date is the policy anniversary on or immediately following the initial insured’s 138th birthday, whichever is earlier) ; for Flexi Power Saver, Wealth Ultra Savings Plan, FortuneXtra Savings Plan, Max Wealth Insurance Plan and WealthAhead Savings Plan, “age 138” refers to the policy anniversary on or immediately following the latest insured’s 138th birthday, whichever the earlier ; for Wealth Advance Savings Series II, “age 100” refers to the policy anniversary on or immediately following the latest insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HKD1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy, except for the notional amount adjustment# for Flexi Power Saver; vii) there is no supplement attached to the policy throughout the contract term of the policy.\n#For Flexi Power Saver, notional amount adjustment is the adjustment made to the notional amount of the basic plan by multiplying the notional amount as at the end of the accumulation period by the percentage of the policy value allocated to the Growth Account on the first day of the flexi saving period.",
+              "spans": [
+                {
+                  "start": 586,
+                  "end": 587,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                },
+                {
+                  "start": 706,
+                  "end": 707,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "For Flexi Power Saver, it is also assumed that i) the policy value at the end of the accumulation period will be allocated to the Growth Account and the Flexi Account on the first day of the flexi saving period according to the default Dual Account allocation percentage; ii) Growth Account Lock-in Option has never been exercised.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Max Wealth Insurance Plan, Wealth Ultra Savings Plan, Wealth Genius Income Plan, Wealth Advance Savings Series II and Flexi Power Saver are denominated in USD only. FortuneXtra Savings Plan and WealthAhead Savings Plan offers a choice of up to 9 and 3 policy currencies (both including HKD), respectively, please refer to the respective product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Subject to terms and conditions, please refer to the promotional leaflet of AXA “WealthAhead Savings Plan Guaranteed Preferential Interest Rate” Programme for details. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "link_type": "Document"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "retirement_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The plan is denominated in USD only. Figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            }
+          ],
+          "retirement_planning_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "For eligibility of tax deductions, please refer to Tax deduction under the section Important information and the website of the Inland Revenue Department (“IRD”) or to contact the IRD directly for any tax related enquiries.",
+              "spans": []
+            }
+          ],
+          "retirement_income_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender and the amount of monthly spending, and it is rounded to the nearest whole number.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefit (i.e. non-guaranteed terminal dividend) which is projected using the Company’s dividend scale determined under the current assumed investment return and are not guaranteed. The dividend scale may be changed by the Company from time to time. The actual amounts payable may change anytime with the values being higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) all premiums are paid in full when due and as planned; ii) neither dementia companion benefit, death benefit nor surrender value has been paid before or becomes payable; iii) no withdrawal has been made before; iv) the notional amount of the policy remain unchanged throughout the contract term of the policy; v) no terminal dividend lock-in option has been exercised; and vi) no levy on insurance premiums is included throughout the term of the policy. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and the monthly guaranteed annuity payment at the time of policy issuance.",
+              "spans": []
+            }
+          ]
+        },
+        "id": "Z7cr8RIAACkAD3ro"
+      },
+      "title": "Untitled Document",
+      "originalPrismicDocument": {
+        "id": "YLCjlRcAADMAeHQN",
+        "uid": "hk-life-fe",
+        "type": "life_funnel",
+        "href": "https://hk-axa-web-2020.cdn.axa-contento-118412.eu/api/v2/documents/search?ref=Z7b3nxIAACcA2SQa&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YLCjlRcAADMAeHQN%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-12-02T03:19:42+0000",
+        "last_publication_date": "2025-01-15T01:06:50+0000",
+        "slugs": [
+          "hk-life-fe"
+        ],
+        "linked_documents": [
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          },
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          },
+          {
+            "id": "YLCjlRcAADMAeHQN",
+            "tags": [],
+            "type": "life_funnel",
+            "slug": "hk-life-fe",
+            "lang": "en-us"
+          }
+        ],
+        "lang": "en-us",
+        "alternate_languages": [
+          {
+            "id": "YLCkqBcAACwAeHjW",
+            "uid": "hk-life-fe",
+            "type": "life_funnel",
+            "lang": "zh-hk"
+          }
+        ],
+        "data": {
+          "meta_title": "Life Insurance and Savings | Quote Now | AXA Hong Kong",
+          "meta_description": "With our comprehensive life protection, we are here to help you build a promising future for yourself and your loved ones. Get a free consultation now.",
+          "meta_keywords": "life insurance, life insurance hong kong, life insurance hk, axa life insurance",
+          "spwl_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "wealth_advance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "flexi_power_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "smart_protector_ii_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "fortune_protector_life_insurance_promotion_text": [
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ],
+          "higher_protection_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "a. “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.\nb. \"age 138\" refers to the policy anniversary on or immediately following the insured's 138th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the protection amount needed, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and LifeDelight offers USD policy currency only. The amount in this webpage is converted to HKD in an preset exchange rate of 1 USD = 8 HKD for illustrative propose only. The actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures in relation to monthly premium are rounded to 1 decimal place.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "protection_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The guaranteed percentage and schedule of guaranteed cash coupon are different for plans with different premium payment period, please refer to the relevant product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "“age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This projected value is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HK$1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the sum insured of the policy remains unchanged throughout the contract term of the policy; vii) there is no supplement attached to the policy throughout the contract term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "strong"
+                },
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "higher_saving_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "“6 Pay 12” refers to the plan with premium payment term of 6 years and an accumulation period of 12 years. Please refer to the product brochure for details on other available options.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": " “age 100” refers to the policy anniversary on or immediately following the insured’s 100th birthday, whichever the earlier, except for the following products: For Wealth Genius Income Plan, “Up to age 138” refers to the day before the maturity date (the maturity date is the policy anniversary on or immediately following the initial insured’s 138th birthday, whichever is earlier) ; for Flexi Power Saver, Wealth Ultra Savings Plan, FortuneXtra Savings Plan, Max Wealth Insurance Plan and WealthAhead Savings Plan, “age 138” refers to the policy anniversary on or immediately following the latest insured’s 138th birthday, whichever the earlier ; for Wealth Advance Savings Series II, “age 100” refers to the policy anniversary on or immediately following the latest insured’s 100th birthday, whichever the earlier.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured, including age, gender, smoking habit and the amount of monthly savings, and it is rounded to the nearest HKD1,000. It may include non-guaranteed benefits which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) standard premium is applied (the insured is not being classified as a special class); iii) neither death benefit nor surrender value has been paid or becomes payable before the policy anniversaries stated; iv) no withdrawals have been made; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy, except for the notional amount adjustment# for Flexi Power Saver; vii) there is no supplement attached to the policy throughout the contract term of the policy.\n#For Flexi Power Saver, notional amount adjustment is the adjustment made to the notional amount of the basic plan by multiplying the notional amount as at the end of the accumulation period by the percentage of the policy value allocated to the Growth Account on the first day of the flexi saving period.",
+              "spans": [
+                {
+                  "start": 586,
+                  "end": 587,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                },
+                {
+                  "start": 706,
+                  "end": 707,
+                  "type": "label",
+                  "data": {
+                    "label": "Sup"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "For Flexi Power Saver, it is also assumed that i) the policy value at the end of the accumulation period will be allocated to the Growth Account and the Flexi Account on the first day of the flexi saving period according to the default Dual Account allocation percentage; ii) Growth Account Lock-in Option has never been exercised.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Max Wealth Insurance Plan, Wealth Ultra Savings Plan, Wealth Genius Income Plan, Wealth Advance Savings Series II and Flexi Power Saver are denominated in USD only. FortuneXtra Savings Plan and WealthAhead Savings Plan offers a choice of up to 9 and 3 policy currencies (both including HKD), respectively, please refer to the respective product brochure for details.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "All premium shown above are calculated based on an insured with nationality and residency in Hong Kong. The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender, smoking habit and risk class of the insured at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "Subject to terms and conditions, please refer to the promotional leaflet of AXA “WealthAhead Savings Plan Guaranteed Preferential Interest Rate” Programme for details. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Remarks:",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 8,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Age selected shall be based on the age of the insured on his or her last birthday.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Premium excludes insurance levy collected by the Insurance Authority.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "To understand more about the non-guaranteed benefits, please click here to view the “Participating Policy Fact Sheet”.",
+              "spans": [
+                {
+                  "start": 67,
+                  "end": 71,
+                  "type": "hyperlink",
+                  "data": {
+                    "id": "XoP7AQ8AAKm6Zchj",
+                    "type": "article_page",
+                    "tags": [
+                      "article:notice"
+                    ],
+                    "slug": "participating-policy-fact-sheets",
+                    "lang": "en-us",
+                    "uid": "participating-policy-fact-sheets",
+                    "link_type": "Document",
+                    "isBroken": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Information on this webpage is for reference only, and not intended to be a complete description of the applicable terms and conditions. Please refer to the product brochure and policy contract for detailed terms and conditions. You should not purchase a policy based on the information on this website alone.",
+              "spans": []
+            }
+          ],
+          "retirement_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The plan is denominated in USD only. Figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            }
+          ],
+          "retirement_planning_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "The premium and projected policy values of all basic plans shown above are projected based on USD being the policy currency and these figures are converted to HKD based on a conversion ratio of 1 USD = 8 HKD, and are for illustrative purposes only.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender, premium payment term, annuity period, annuity start age and the amount of monthly savings, and it is rounded to the nearest whole number.",
+              "spans": [
+                {
+                  "start": 76,
+                  "end": 88,
+                  "type": "strong"
+                },
+                {
+                  "start": 113,
+                  "end": 149,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefits (i.e. monthly non-guaranteed annuity payment and non-guaranteed terminal dividend) which are projected using the Company’s current dividend scale and/or interest rate (as the case may be). The dividend scale and interest rate are not guaranteed and may be changed by the Company from time to time. The actual values may be higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. In particular, the actual amount of monthly non-guaranteed annuity payment may increase or decrease during the annuity term.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) monthly premium payment mode is chosen and all premiums are paid in full when due and as planned; ii) the monthly annuity payment (which comprises of monthly guaranteed annuity payment and monthly non-guaranteed annuity payment) are left with us for interest accumulation; iii) no death benefit, surrender value or Dementia Advance Benefit has been paid before or becomes payable before the policy anniversaries stated; iv) no withdrawal has been made before; v) there is no indebtedness under the policy; vi) the notional amount of the policy remains unchanged throughout the contract term of the policy; and vii) no levy on insurance premium is included throughout the term of the policy.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and annuity start age at the time of policy issuance.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "For eligibility of tax deductions, please refer to Tax deduction under the section Important information and the website of the Inland Revenue Department (“IRD”) or to contact the IRD directly for any tax related enquiries.",
+              "spans": []
+            }
+          ],
+          "retirement_income_disclaimer": [
+            {
+              "type": "o-list-item",
+              "text": "It is calculated based on the information provided by you about the insured and the plan, including age, gender and the amount of monthly spending, and it is rounded to the nearest whole number.",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "This may include non-guaranteed benefit (i.e. non-guaranteed terminal dividend) which is projected using the Company’s dividend scale determined under the current assumed investment return and are not guaranteed. The dividend scale may be changed by the Company from time to time. The actual amounts payable may change anytime with the values being higher or lower than those illustrated. Under some circumstances, the non-guaranteed benefits may be zero. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The calculation of this projected value assumes that i) all premiums are paid in full when due and as planned; ii) neither dementia companion benefit, death benefit nor surrender value has been paid before or becomes payable; iii) no withdrawal has been made before; iv) the notional amount of the policy remain unchanged throughout the contract term of the policy; v) no terminal dividend lock-in option has been exercised; and vi) no levy on insurance premiums is included throughout the term of the policy. ",
+              "spans": []
+            },
+            {
+              "type": "o-list-item",
+              "text": "The premiums calculated are for reference only and the actual amounts may be different from those illustrated. The premium is calculated with reference to a number of factors including but not limited to the age, gender of the insured and the monthly guaranteed annuity payment at the time of policy issuance.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+[2025-02-20T13:19:48.072Z] Migration Error in batch 1: {
+  "batchNumber": 1,
+  "totalDocuments": 1,
+  "documents": [
+    {
+      "id": "YLCjlRcAADMAeHQN",
+      "uid": "hk-life-fe",
+      "name": "Untitled Document"
+    }
+  ],
+  "error": {
+    "message": "An invalid API response was returned",
+    "response": [
+      {
+        "property": "data.higher_protection_disclaimer.8.spans.1",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      },
+      {
+        "property": "data.protection_saving_disclaimer.8.spans.1",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      },
+      {
+        "property": "data.higher_saving_disclaimer.12.spans.0",
+        "value": {
+          "start": 67,
+          "end": 71,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Any"
+          }
+        },
+        "error": "Hyperlink span must contain a 'data' field with link data"
+      }
+    ],
+    "url": "https://migration.prismic.io/documents/Z7cr8RIAACkAD3ro"
+  }
+}
